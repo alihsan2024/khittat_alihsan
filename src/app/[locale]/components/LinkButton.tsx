@@ -4,13 +4,21 @@ import React from 'react'
 import { Link } from '@/src/navigation'
 import { cn } from '@/lib/utils'
 
+type LinkHref =
+  | string
+  | {
+      pathname: string
+      params?: Record<string, string>
+      query?: Record<string, string | number | boolean>
+    }
+
 interface LinkButtonProps
-  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+  extends Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'href'> {
   children: React.ReactNode
   variant?: 'primary' | 'secondary' | 'yellow'
   size?: 'small' | 'medium' | 'large'
   rounded?: boolean
-  href: string
+  href: LinkHref
 }
 
 const LinkButton: React.FC<LinkButtonProps> = ({
@@ -41,7 +49,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
 
   return (
     <Link
-      href={href}
+      href={href as any}
       className={cn(
         baseStyles,
         sizeStyles[size],

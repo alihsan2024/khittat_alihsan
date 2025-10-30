@@ -146,7 +146,10 @@ export default function CartSidebar({ isArabic }: CartSidebarProps) {
                     >
                       {/* Project Image - Left Side */}
                       <Link
-                        href={`/projects/${item.projectSlug}`}
+                        href={{
+                          pathname: '/projects/[slug]',
+                          params: { slug: item.projectSlug }
+                        }}
                         onClick={() => setIsOpen(false)}
                         className='relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-lg lg:h-24 lg:w-24'
                       >
@@ -163,7 +166,10 @@ export default function CartSidebar({ isArabic }: CartSidebarProps) {
                         <div className='flex items-start justify-between gap-2'>
                           <div className='min-w-0 flex-1'>
                             <Link
-                              href={`/projects/${item.projectSlug}`}
+                              href={{
+                                pathname: '/projects/[slug]',
+                                params: { slug: item.projectSlug }
+                              }}
                               onClick={() => setIsOpen(false)}
                             >
                               <h3 className='line-clamp-2 text-sm font-semibold text-gray-900 transition-colors hover:text-primary-300 dark:text-white lg:text-base'>

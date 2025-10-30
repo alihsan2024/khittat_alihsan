@@ -33,7 +33,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     isArabic && arBrief ? (arBrief as string) : project.brief_description
 
   return (
-    <Link href={`/projects/${project.slug}`}>
+    <Link
+      href={{ pathname: '/projects/[slug]', params: { slug: project.slug } }}
+    >
       <div
         className={`group relative overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl dark:border-gray-800 dark:bg-gray-800 ${
           isArabic ? 'text-right' : ''
