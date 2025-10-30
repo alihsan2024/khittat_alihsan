@@ -22,10 +22,23 @@ const config = {
         'span-bg': 'var(--span-bg)'
       },
       colors: {
-        background: 'var(--background)',
+        transparent: 'transparent',
+        mainYellow: '#FFD600',
+        secondaryBg: '#F2F2F7',
+        white: '#ffffff',
+        black: '#000000',
+        blue: '#2980F5',
         primary: {
-          DEFAULT: 'var(--primary)'
+          100: '#F1F5FF',
+          200: '#D0DEFF',
+          300: '#244180',
+          400: '#16274D',
+          500: '#0B1426',
+          600: '#04070D',
+          DEFAULT: '#244180'
         },
+        // Legacy colors for backward compatibility
+        background: 'var(--background)',
         'button-secondary': 'var(--button-secondary)',
         'button-text': 'var(--button-text)',
         'text-secondary': 'var(--text-secondary)',
@@ -39,7 +52,7 @@ const config = {
       },
 
       fontFamily: {
-        sans: ['var(--font-space-grotesk)', 'var(--rubik)']
+        sans: ['var(--font-avenir)', 'Avenir', 'sans-serif']
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',

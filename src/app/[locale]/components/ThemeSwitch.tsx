@@ -7,26 +7,38 @@ import { FiSun } from 'react-icons/fi'
 import { useOnClickOutside } from 'usehooks-ts'
 import Button from './Button'
 
-export default function ThemeSwitch() {
+interface ThemeSwitchProps {
+  locale?: string
+}
+
+export default function ThemeSwitch({ locale = 'en' }: ThemeSwitchProps) {
   const t = useTranslations('')
   const [mounted, setMounted] = useState(false)
   const [isOpen, setIsOpen] = useState(false) // New state to control dropdown visibility
   const { setTheme, resolvedTheme, themes, theme } = useTheme()
   const ref = useRef(null)
+  const isRTL = locale === 'ar'
+  const isDark = theme === 'dark' || theme === 'discord' || theme === 'netflix'
   useEffect(() => setMounted(true), [])
   useOnClickOutside(ref, () => setIsOpen(false))
+
+  const buttonClasses = `inline-flex items-center gap-2 transition-colors ${
+    isDark
+      ? 'border border-gray-700 bg-gray-800 text-white hover:bg-gray-700'
+      : 'border border-primary-500 bg-white text-primary-500 hover:bg-primary-50'
+  }`
+
   if (!mounted)
     return (
       <Button
         size='small'
         type='button'
-        className='text-destructive inline-flex w-fit min-w-[95px] items-center justify-between gap-3'
+        className={buttonClasses}
         id='options-menu'
         aria-expanded={isOpen}
         onClick={() => {}}
       >
-        <span className='ml-2'>{t('Theme')}</span>
-        <FiSun />
+        <FiSun className='h-4 w-4' />
       </Button>
     )
 
@@ -39,16 +51,21 @@ export default function ThemeSwitch() {
       <Button
         size='small'
         type='button'
-        className='text-destructive inline-flex w-full min-w-[95px] items-center justify-between gap-3'
+        className={buttonClasses}
         id='options-menu'
         aria-expanded={isOpen}
         onClick={toggleDropdown}
       >
-        <span className='ml-2'>{t('Theme')}</span>
-        <FiSun />
+        <FiSun className='h-4 w-4' />
       </Button>
       {isOpen && (
-        <div className='absolute right-0 mt-2 w-full origin-top-right rounded-md bg-dropdown shadow-lg'>
+        <div
+          className={`absolute ${isRTL ? 'left-0' : 'right-0'} z-50 mt-2 w-36 rounded-md shadow-lg ring-1 transition-colors ${
+            isDark
+              ? 'border border-gray-700 bg-gray-800 ring-gray-700'
+              : 'bg-white ring-black ring-opacity-5'
+          }`}
+        >
           <div
             className='py-1'
             role='menu'
@@ -56,6 +73,7 @@ export default function ThemeSwitch() {
             aria-labelledby='options-menu'
           >
             {themes.map(themeItem => {
+              const isSelected = themeItem === theme
               return (
                 <button
                   key={themeItem}
@@ -63,10 +81,14 @@ export default function ThemeSwitch() {
                     setTheme(themeItem)
                     setIsOpen(false)
                   }}
-                  className={`block w-full px-4 py-2 text-left text-sm hover:bg-dropdownHover ${
-                    themeItem === theme
-                      ? 'bg-selected text-primary hover:bg-selected'
-                      : 'text-secondary'
+                  className={`block w-full px-4 py-2 text-left text-sm transition-colors ${
+                    isDark
+                      ? isSelected
+                        ? 'bg-primary-900 font-medium text-primary-300'
+                        : 'text-gray-300 hover:bg-gray-700'
+                      : isSelected
+                        ? 'bg-primary-100 font-medium text-primary-600'
+                        : 'text-gray-700 hover:bg-gray-50'
                   }`}
                 >
                   {capitalize(themeItem)}
