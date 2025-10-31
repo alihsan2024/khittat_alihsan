@@ -54,7 +54,7 @@ export default function AddOns({ project, isArabic, className }: AddOnsProps) {
             <span className='text-base font-semibold text-gray-900 dark:text-white'>
               {isArabic ? 'وليمة' : 'Waleemah'}
             </span>
-            <span className='text-sm font-bold text-primary-300'>$180 USD</span>
+            <span className='text-sm font-bold text-primary-300'>$117 USD</span>
           </div>
           <p className='mb-3 text-sm text-gray-600 dark:text-gray-400'>
             {isArabic
@@ -67,7 +67,7 @@ export default function AddOns({ project, isArabic, className }: AddOnsProps) {
             className='w-full'
             onClick={() =>
               addAddon(
-                180,
+                117,
                 isArabic ? 'وليمة' : 'Waleemah',
                 isArabic
                   ? 'وليمة مجتمعية - تكفي 100 شخص'
@@ -84,7 +84,7 @@ export default function AddOns({ project, isArabic, className }: AddOnsProps) {
             <span className='text-base font-semibold text-gray-900 dark:text-white'>
               {isArabic ? '25 كجم أرز' : '25 kg Rice'}
             </span>
-            <span className='text-sm font-bold text-primary-300'>$60 USD</span>
+            <span className='text-sm font-bold text-primary-300'>$39 USD</span>
           </div>
           <p className='mb-3 text-sm text-gray-600 dark:text-gray-400'>
             {isArabic ? 'إضافة اختيارية' : 'Optional add-on'}
@@ -95,7 +95,7 @@ export default function AddOns({ project, isArabic, className }: AddOnsProps) {
             className='w-full'
             onClick={() =>
               addAddon(
-                60,
+                39,
                 isArabic ? '25 كجم أرز' : '25 kg Rice',
                 isArabic ? 'إضافة اختيارية' : 'Optional add-on'
               )

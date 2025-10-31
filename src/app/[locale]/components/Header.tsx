@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { FC, useEffect, useState } from 'react'
 import { FiMenu, FiX } from 'react-icons/fi'
 import Button from './Button'
+import LinkButton from './LinkButton'
 import LangSwitcher from './LangSwitcher'
 import ThemeSwitch from './ThemeSwitch'
 import CartSidebar from './CartSidebar'
@@ -152,9 +153,9 @@ export const Header: FC<Props> = ({ locale }) => {
 
         {/* Desktop Right side buttons */}
         <div className='hidden items-center gap-2 md:flex'>
-          <Button variant='yellow' size='small'>
+          <LinkButton href='/projects' variant='yellow' size='small'>
             {t('Donate')}
-          </Button>
+          </LinkButton>
           <CartSidebar isArabic={locale === 'ar'} />
           <ThemeSwitch locale={locale} />
           <LangSwitcher locale={locale} />
@@ -274,14 +275,15 @@ export const Header: FC<Props> = ({ locale }) => {
 
               {/* Bottom Button */}
               <div className='border-t px-4 py-4 dark:border-gray-800'>
-                <Button
+                <LinkButton
+                  href='/projects'
                   variant='yellow'
                   size='large'
                   className='w-full text-base font-semibold'
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {t('Donate')}
-                </Button>
+                </LinkButton>
               </div>
             </div>
           </div>

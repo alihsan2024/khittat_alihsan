@@ -25,10 +25,10 @@ export default function DonationSidebar({
 
   // Default donation amounts
   const defaultAmounts: Price[] = [
-    { amount: 50, currency: 'USD' },
-    { amount: 100, currency: 'USD' },
-    { amount: 200, currency: 'USD' },
-    { amount: 300, currency: 'USD' }
+    { amount: 33, currency: 'USD' },
+    { amount: 65, currency: 'USD' },
+    { amount: 130, currency: 'USD' },
+    { amount: 195, currency: 'USD' }
   ]
 
   const hasPrices =

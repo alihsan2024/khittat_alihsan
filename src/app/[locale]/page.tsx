@@ -82,12 +82,12 @@ export default async function HomePage() {
               {t('Subheading')}
             </p>
             <div className='flex gap-3 pt-2'>
-              <Button variant='yellow' size='medium'>
+              <LinkButton href='/projects' variant='yellow' size='medium'>
                 {t('Donate')}
-              </Button>
-              <Button variant='secondary' size='medium'>
+              </LinkButton>
+              <LinkButton href='/contact' variant='secondary' size='medium'>
                 {t('Contact')}
-              </Button>
+              </LinkButton>
             </div>
           </div>
         </div>

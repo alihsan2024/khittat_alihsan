@@ -586,7 +586,7 @@ export default async function ProjectDetailPage({
       },
       cost: {
         title: 'How Much Does a Water Well Cost?',
-        content: `Shallow Water Well - Sri Lanka: $550\n\nDeep Water Well - Uganda, hand-pumped: $1,600\n\nDeep Water Well - Indonesia, electric: $1,600\n\nDeep Water Well with Water Station: $2,700\n\nEvery contribution funds construction, testing, and safe use, ensuring families have access to clean water for years to come.`
+        content: `Shallow Water Well - Sri Lanka: $358\n\nDeep Water Well - Uganda, hand-pumped: $1,040\n\nDeep Water Well - Indonesia, electric: $1,040\n\nDeep Water Well with Water Station: $1,755\n\nEvery contribution funds construction, testing, and safe use, ensuring families have access to clean water for years to come.`
       },
       sadaqahJariyah: {
         title: 'Water Wells as Sadaqah Jariyah: The Best Ongoing Charity',
@@ -609,11 +609,11 @@ export default async function ProjectDetailPage({
       },
       whereWeBuild: {
         title: 'أين نبني آبار المياه: سريلانكا، أوغندا، إندونيسيا',
-        content: `من خلال جمعية خطط الإحسان، تصل تبرعاتكم إلى ثلاث دول أساسية:\n\nسريلانكا – بئر سطحي (550$): يوفر مياه الشرب الآمنة للقرى الريفية.\n\nأوغندا – بئر عميق بمضخة يدوية (1600$): مصدر دائم وآمن للمياه للأسر التي كانت تعتمد على الأنهار الملوثة.\n\nإندونيسيا – بئر عميق كهربائي مع محطة وضوء (1600$+): مجهز بخزان 1000 لتر وصنابير، يخدم العائلات والمساجد للشرب والوضوء.`
+        content: `من خلال جمعية خطط الإحسان، تصل تبرعاتكم إلى ثلاث دول أساسية:\n\nسريلانكا – بئر سطحي (358$): يوفر مياه الشرب الآمنة للقرى الريفية.\n\nأوغندا – بئر عميق بمضخة يدوية (1040$): مصدر دائم وآمن للمياه للأسر التي كانت تعتمد على الأنهار الملوثة.\n\nإندونيسيا – بئر عميق كهربائي مع محطة وضوء (1040$+): مجهز بخزان 1000 لتر وصنابير، يخدم العائلات والمساجد للشرب والوضوء.`
       },
       cost: {
         title: 'تكلفة حفر الآبار',
-        content: `بئر سطحي في سريلانكا: 550$\n\nبئر عميق في أوغندا (مضخة يدوية): 1600$\n\nبئر عميق في إندونيسيا (كهربائي مع محطة وضوء): 1600$+\n\nبئر عميق مع محطة مياه: 2700$`
+        content: `بئر سطحي في سريلانكا: 358$\n\nبئر عميق في أوغندا (مضخة يدوية): 1040$\n\nبئر عميق في إندونيسيا (كهربائي مع محطة وضوء): 1040$+\n\nبئر عميق مع محطة مياه: 1755$`
       },
       sadaqahJariyah: {
         title: 'الصدقة الجارية: أعظم صدقة هي سقي الماء',
@@ -629,7 +629,7 @@ export default async function ProjectDetailPage({
   // Sadaqah Sacrifice Project Content
   const sadaqahSacrificeContent = {
     en: {
-      intro: `Thank Allah ﷻ through Sadaqah Sacrifice while feeding families in need. Goat $135, Sheep $145, Waleemah $180.`,
+      intro: `Thank Allah ﷻ through Sadaqah Sacrifice while feeding families in need. Goat $88, Sheep $95, Waleemah $117.`,
       whatIsSadaqah: {
         title: 'What is Sadaqah Sacrifice?',
         content: `Sadaqah Sacrifice is one of the most heartfelt ways to thank Allah ﷻ for His countless blessings. This sacrifice is voluntary. It is done out of gratitude, whether after a safe journey, recovering from illness, moving into a new home, or simply reflecting on Allah's generosity in your life.\n\nAt Khitat Al-Ihsan Charity Social Association, we arrange your Sadaqah Sacrifice in Bangladesh, Uganda, and Lebanon. Families who rarely have the chance to eat meat will share in your offering, making your gratitude a source of nourishment and joy for those in hardship.`
@@ -644,7 +644,7 @@ export default async function ProjectDetailPage({
       },
       cost: {
         title: 'How Much Does Sadaqah Sacrifice Cost?',
-        content: `Goat Sacrifice – $135\nAvailable in Uganda & Bangladesh\n\nSheep Sacrifice (small) – $145\nAvailable in Uganda\n\nSheep Sacrifice – Lebanon\nContact the office for a quote (prices in USD, subject to exchange fluctuations).\n\nOptional Add-ons:\n\n25 kg Rice – $60\n\nCommunity Feast (Waleemah) – $180\nIncludes:\n\nCommunity feast preparation - $120\n\n25 kg rice - $60. Required for all Waleemah.\n\nFeeds up to 100 people.\n\nNote: Waleemah can only be arranged together with a Sadaqah Sacrifice.`
+        content: `Goat Sacrifice – $88\nAvailable in Uganda & Bangladesh\n\nSheep Sacrifice (small) – $95\nAvailable in Uganda\n\nSheep Sacrifice – Lebanon\nContact the office for a quote (prices in USD, subject to exchange fluctuations).\n\nOptional Add-ons:\n\n25 kg Rice – $39\n\nCommunity Feast (Waleemah) – $117\nIncludes:\n\nCommunity feast preparation - $78\n\n25 kg rice - $39. Required for all Waleemah.\n\nFeeds up to 100 people.\n\nNote: Waleemah can only be arranged together with a Sadaqah Sacrifice.`
       },
       whatIsWaleemah: {
         title: 'What is a Community Feast (Waleemah)?',
@@ -661,7 +661,7 @@ export default async function ProjectDetailPage({
       callToAction: `Offer Your Sadaqah Sacrifice Today\n\nA single sacrifice can fill empty plates, bring joy to forgotten families, and carry your gratitude to Allah ﷻ into action.\n\nMay Allah ﷻ accept your offering, heal the sick, bless your loved ones, and increase you in goodness and barakah. Ameen.`
     },
     ar: {
-      intro: `اشكروا الله ﷻ من خلال ذبيحة الصدقة، وأطعموا بها الأسر المحتاجة. الماعز 135 دولارًا، الخروف 145 دولارًا، الوليمة 180 دولارًا.`,
+      intro: `اشكروا الله ﷻ من خلال ذبيحة الصدقة، وأطعموا بها الأسر المحتاجة. الماعز 88 دولارًا، الخروف 95 دولارًا، الوليمة 117 دولارًا.`,
       whatIsSadaqah: {
         title: 'ما هي ذبيحة الصدقة؟',
         content: `ذبيحة الصدقة من أصدق وسائل شكر الله ﷻ على نعمه التي لا تُحصى. وهي ذبيحة تطوعية، ليست واجبة، يقوم بها المسلم تعبيرًا عن الامتنان؛ بعد سفرٍ آمن، أو شفاءٍ من مرض، أو الانتقال إلى منزل جديد، أو حتى عند التأمل في فضل الله وكرمه.\n\nفي جمعية خطط الإحسان الخيرية الاجتماعية، نقوم بترتيب ذبائح الصدقة في بنغلاديش وأوغندا ولبنان. لتصل لحوم الأضاحي إلى الأسر التي نادرًا ما تتذوق اللحم، فيتحول شكركم إلى غذاءٍ وفرحٍ لمن يعيشون في ضيق.`
@@ -676,7 +676,7 @@ export default async function ProjectDetailPage({
       },
       cost: {
         title: 'كم تبلغ تكلفة ذبيحة الصدقة؟',
-        content: `ذبيحة ماعز – 135 دولارًا\nمتوفرة في أوغندا وبنغلاديش\n\nذبيحة خروف (صغير) – 145 دولارًا\nمتوفرة في أوغندا\n\nذبيحة خروف – لبنان\nيُرجى التواصل مع المكتب للحصول على السعر (بالدولار الأمريكي، حسب تقلبات الصرف).\n\nإضافات اختيارية:\n\n25 كجم أرز – 60 دولارًا\n\nوليمة مجتمعية (وليمة) – 180 دولارًا\nتشمل:\n\nتجهيز الوليمة وطهي الذبيحة – 120 دولارًا\n\n25 كجم أرز – 60 دولارًا\n(مطلوبة لجميع الولائم – تكفي لما يصل إلى 100 شخص).`
+        content: `ذبيحة ماعز – 88 دولارًا\nمتوفرة في أوغندا وبنغلاديش\n\nذبيحة خروف (صغير) – 95 دولارًا\nمتوفرة في أوغندا\n\nذبيحة خروف – لبنان\nيُرجى التواصل مع المكتب للحصول على السعر (بالدولار الأمريكي، حسب تقلبات الصرف).\n\nإضافات اختيارية:\n\n25 كجم أرز – 39 دولارًا\n\nوليمة مجتمعية (وليمة) – 117 دولارًا\nتشمل:\n\nتجهيز الوليمة وطهي الذبيحة – 78 دولارًا\n\n25 كجم أرز – 39 دولارًا\n(مطلوبة لجميع الولائم – تكفي لما يصل إلى 100 شخص).`
       },
       whatIsWaleemah: {
         title: 'ما هي الوليمة؟',
@@ -717,7 +717,7 @@ export default async function ProjectDetailPage({
       cost: {
         title: 'How Much Does Aqeeqah Cost?',
         content:
-          'Goat Sacrifice – $135\nAvailable in: Uganda & Bangladesh\n\nSheep Sacrifice (small) – $145\nAvailable in: Uganda\n\nSheep Sacrifice – Lebanon\nContact the office for a quote (prices in USD, subject to exchange fluctuations).\n\nOptional Add-ons:\n\n25 kg Rice – $60\n\nCommunity Feast (Waleemah) – $180\nIncludes:\n\nCommunity feast preparation - $120\n\n25 kg rice - $60. Required for all Waleemah.\n\nNote: Waleemah can only be arranged together with an Aqeeqah sacrifice.'
+          'Goat Sacrifice – $88\nAvailable in: Uganda & Bangladesh\n\nSheep Sacrifice (small) – $95\nAvailable in: Uganda\n\nSheep Sacrifice – Lebanon\nContact the office for a quote (prices in USD, subject to exchange fluctuations).\n\nOptional Add-ons:\n\n25 kg Rice – $39\n\nCommunity Feast (Waleemah) – $117\nIncludes:\n\nCommunity feast preparation - $78\n\n25 kg rice - $39. Required for all Waleemah.\n\nNote: Waleemah can only be arranged together with an Aqeeqah sacrifice.'
       },
       whatIsWaleemah: {
         title: 'What Is A Community Feast (Waleemah)?',
@@ -753,7 +753,7 @@ export default async function ProjectDetailPage({
       cost: {
         title: 'كم تكلفة العقيقة؟',
         content:
-          'ذبيحة الماعز – 135 دولارًا\nمتوفرة في: أوغندا وبنغلاديش\n\nذبيحة الخروف (صغير) – 145 دولارًا\nمتوفرة في: أوغندا\n\nذبيحة الخروف – لبنان\nيرجى التواصل مع المكتب للحصول على السعر الحالي (بالدولار الأمريكي وقد يتغيّر تبعًا لتقلبات سعر الصرف).\n\nخيارات إضافية:\n\n25 كغ أرز – 60 دولارًا\n\nوليمة (وليمة جماعية) – 180 دولارًا\nتشمل تجهيز وطهي الذبيحة (120 دولارًا) + 25 كغ أرز (60 دولارًا).\n\nملاحظة: الوليمة مرتبطة بالعقيقة ولا يمكن طلبها منفصلة.'
+          'ذبيحة الماعز – 88 دولارًا\nمتوفرة في: أوغندا وبنغلاديش\n\nذبيحة الخروف (صغير) – 95 دولارًا\nمتوفرة في: أوغندا\n\nذبيحة الخروف – لبنان\nيرجى التواصل مع المكتب للحصول على السعر الحالي (بالدولار الأمريكي وقد يتغيّر تبعًا لتقلبات سعر الصرف).\n\nخيارات إضافية:\n\n25 كغ أرز – 39 دولارًا\n\nوليمة (وليمة جماعية) – 117 دولارًا\nتشمل تجهيز وطهي الذبيحة (78 دولارًا) + 25 كغ أرز (39 دولارًا).\n\nملاحظة: الوليمة مرتبطة بالعقيقة ولا يمكن طلبها منفصلة.'
       },
       whatIsWaleemah: {
         title: 'ما هي الوليمة؟',
@@ -1985,13 +1985,13 @@ export default async function ProjectDetailPage({
                       updated_at: project.updated_at,
                       prices: [
                         {
-                          amount: 550,
+                          amount: 358,
                           currency: 'USD',
                           label: isArabic ? 'بئر سطحي' : 'Shallow Well',
                           description: isArabic ? 'سريلانكا' : 'Sri Lanka'
                         },
                         {
-                          amount: 1600,
+                          amount: 1040,
                           currency: 'USD',
                           label: isArabic
                             ? 'بئر عميق بمضخة يدوية'
@@ -1999,7 +1999,7 @@ export default async function ProjectDetailPage({
                           description: isArabic ? 'أوغندا' : 'Uganda'
                         },
                         {
-                          amount: 1600,
+                          amount: 1040,
                           currency: 'USD',
                           label: isArabic
                             ? 'بئر كهربائي'
@@ -2007,7 +2007,7 @@ export default async function ProjectDetailPage({
                           description: isArabic ? 'إندونيسيا' : 'Indonesia'
                         },
                         {
-                          amount: 2700,
+                          amount: 1755,
                           currency: 'USD',
                           label: isArabic
                             ? 'بئر مع محطة مياه'
@@ -2031,7 +2031,7 @@ export default async function ProjectDetailPage({
                         updated_at: project.updated_at,
                         prices: [
                           {
-                            amount: 135,
+                            amount: 88,
                             currency: 'USD',
                             label: isArabic ? 'ذبيحة ماعز' : 'Goat Sacrifice',
                             description: isArabic
@@ -2039,7 +2039,7 @@ export default async function ProjectDetailPage({
                               : 'Uganda & Bangladesh'
                           },
                           {
-                            amount: 145,
+                            amount: 95,
                             currency: 'USD',
                             label: isArabic ? 'ذبيحة خروف' : 'Sheep Sacrifice',
                             description: isArabic ? 'أوغندا' : 'Uganda'
@@ -2059,7 +2059,7 @@ export default async function ProjectDetailPage({
                           updated_at: project.updated_at,
                           prices: [
                             {
-                              amount: 135,
+                              amount: 88,
                               currency: 'USD',
                               label: isArabic ? 'ذبيحة ماعز' : 'Goat Sacrifice',
                               description: isArabic
@@ -2067,7 +2067,7 @@ export default async function ProjectDetailPage({
                                 : 'Uganda & Bangladesh'
                             },
                             {
-                              amount: 145,
+                              amount: 95,
                               currency: 'USD',
                               label: isArabic
                                 ? 'ذبيحة خروف'
