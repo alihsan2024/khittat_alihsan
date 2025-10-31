@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { Link } from '@/src/navigation'
 import { FiArrowRight } from 'react-icons/fi'
-import type { Project, Price } from '@/lib/types/project'
+import type { Project } from '@/lib/types/project'
 import { useLocale } from 'next-intl'
 
 interface ProjectCardProps {
@@ -13,18 +13,6 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   const locale = useLocale()
   const isArabic = locale === 'ar'
-  // Default donation amounts
-  const defaultAmounts: Price[] = [
-    { amount: 50, currency: 'USD' },
-    { amount: 100, currency: 'USD' },
-    { amount: 200, currency: 'USD' },
-    { amount: 300, currency: 'USD' }
-  ]
-
-  const hasPrices =
-    project.prices && Array.isArray(project.prices) && project.prices.length > 0
-  const prices = hasPrices ? project.prices : defaultAmounts
-  const lowestPrice = Math.min(...prices.map((p: Price) => p.amount || 0))
 
   const arTitle = project.title_ar || (project as any).arabic_title
   const arBrief = project.brief_description_ar || (project as any).arabic_desc
@@ -68,28 +56,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             {displayBrief}
           </p>
 
-          {/* Price & CTA */}
+          {/* CTA */}
           <div
-            className={`flex items-center justify-between ${isArabic ? 'flex-row-reverse' : ''}`}
+            className={`flex items-center justify-end gap-2 text-primary-300 transition-transform group-hover:translate-x-1 ${
+              isArabic ? 'flex-row-reverse' : ''
+            }`}
           >
-            <div className='flex flex-col'>
-              <span className='text-xs text-gray-500 dark:text-gray-400'>
-                {isArabic ? 'ابتداءً من' : 'Starting from'}
-              </span>
-              <span className='text-lg font-extrabold text-primary-300'>
-                ${lowestPrice} USD
-              </span>
-            </div>
-            <div
-              className={`flex items-center gap-2 text-primary-300 transition-transform group-hover:translate-x-1 ${
-                isArabic ? 'flex-row-reverse' : ''
-              }`}
-            >
-              <span className='text-sm font-semibold'>
-                {isArabic ? 'عرض التفاصيل' : 'View Details'}
-              </span>
-              <FiArrowRight className='h-4 w-4' />
-            </div>
+            <span className='text-sm font-semibold'>
+              {isArabic ? 'عرض التفاصيل' : 'View Details'}
+            </span>
+            <FiArrowRight className='h-4 w-4' />
           </div>
         </div>
       </div>

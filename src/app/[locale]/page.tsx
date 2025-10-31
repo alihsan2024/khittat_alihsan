@@ -299,14 +299,6 @@ export default async function HomePage() {
                 <LinkButton href='/contact' variant='primary' size='medium'>
                   {t('Contact')}
                 </LinkButton>
-                <a
-                  href='https://wa.me/96181482281'
-                  target='_blank'
-                  rel='noreferrer'
-                  className='inline-flex items-center rounded-lg border border-gray-200 px-4 py-2 text-sm font-semibold text-gray-700 hover:border-primary-300 hover:text-primary-300 dark:border-gray-700 dark:text-gray-200 dark:hover:border-primary-400 dark:hover:text-primary-400'
-                >
-                  WhatsApp
-                </a>
               </div>
             </div>
             <div className='grid gap-4'>

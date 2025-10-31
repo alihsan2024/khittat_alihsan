@@ -41,7 +41,10 @@ export default function DonationSidebar({
   const selectedAmount = selectedPrice?.amount || 0
   const isSadaqahSacrifice = project.slug === 'sadaqah-sacrifice'
   const isAqeeqah = project.slug === 'aqeeqah'
+  const isWaterWells = project.slug === 'water-well'
   const showAddOns = isSadaqahSacrifice || isAqeeqah
+  const isCompactMobile = isWaterWells || isAqeeqah || isSadaqahSacrifice
+  const [isMobileExpanded, setIsMobileExpanded] = useState(false)
 
   const handleDonate = () => {
     const selectedPrice = prices[selectedPriceIndex] || prices[0]
@@ -87,40 +90,99 @@ export default function DonationSidebar({
     <>
       {/* Mobile: Bottom Sticky Donation Bar */}
       <div
-        className={`fixed bottom-0 left-0 right-0 z-50 border-t border-gray-200 bg-white p-4 shadow-lg transition-transform duration-300 dark:border-gray-800 dark:bg-gray-900 lg:hidden ${
+        className={`fixed bottom-0 left-0 right-0 z-50 border-t border-gray-200 bg-white shadow-lg transition-all duration-300 dark:border-gray-800 dark:bg-gray-900 lg:hidden ${
           isCartOpen ? 'translate-y-full' : 'translate-y-0'
-        }`}
+        } ${isCompactMobile && !isMobileExpanded ? 'p-2' : 'p-4'}`}
       >
-        <div className='mx-auto max-w-md space-y-3'>
-          <select
-            value={selectedPriceIndex}
-            onChange={e => setSelectedPriceIndex(Number(e.target.value))}
-            className='w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-base text-gray-900 focus:border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white'
+        {isCompactMobile && !isMobileExpanded ? (
+          /* Compact Preview Mode */
+          <div
+            className='bg-primary-50 dark:bg-primary-900/20 mx-auto max-w-md cursor-pointer rounded-lg p-3'
+            onClick={() => setIsMobileExpanded(true)}
           >
-            {prices.map((price: Price, index: number) => (
-              <option key={index} value={index}>
-                ${price.amount.toLocaleString()} USD
-                {price.label ? ` - ${price.label}` : ''}
-                {price.description ? ` (${price.description})` : ''}
-              </option>
-            ))}
-          </select>
-          {showAddOns && (
-            <AddOns
-              project={project}
-              isArabic={isArabic}
-              className='mt-2 rounded-lg border border-gray-200 bg-gray-50 p-3 dark:border-gray-800 dark:bg-gray-800'
-            />
-          )}
-          <Button
-            variant='primary'
-            size='medium'
-            className='w-full'
-            onClick={handleDonate}
-          >
-            {isArabic ? 'تبرع الآن' : 'Donate Now'}
-          </Button>
-        </div>
+            <div className='flex items-center justify-between'>
+              <div className='flex flex-col'>
+                <span className='text-xs text-gray-600 dark:text-gray-400'>
+                  {isArabic ? 'مبلغ التبرع' : 'Donation Amount'}
+                </span>
+                <span className='text-base font-bold text-primary-300'>
+                  ${selectedAmount.toLocaleString()} USD
+                  {selectedPrice.label ? ` - ${selectedPrice.label}` : ''}
+                </span>
+              </div>
+              <svg
+                className='h-5 w-5 text-gray-600 dark:text-gray-400'
+                fill='none'
+                stroke='currentColor'
+                viewBox='0 0 24 24'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth={2}
+                  d='M19 9l-7 7-7-7'
+                />
+              </svg>
+            </div>
+          </div>
+        ) : (
+          /* Expanded Mode */
+          <div className='mx-auto max-w-md space-y-3'>
+            {isCompactMobile && (
+              <div className='flex items-center justify-between pb-2'>
+                <h4 className='text-sm font-semibold text-gray-900 dark:text-white'>
+                  {isArabic ? 'اختر مبلغ التبرع' : 'Select Donation Amount'}
+                </h4>
+                <button
+                  onClick={() => setIsMobileExpanded(false)}
+                  className='rounded-lg p-1 text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800'
+                >
+                  <svg
+                    className='h-5 w-5'
+                    fill='none'
+                    stroke='currentColor'
+                    viewBox='0 0 24 24'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth={2}
+                      d='M6 18L18 6M6 6l12 12'
+                    />
+                  </svg>
+                </button>
+              </div>
+            )}
+            <select
+              value={selectedPriceIndex}
+              onChange={e => setSelectedPriceIndex(Number(e.target.value))}
+              className='w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-base text-gray-900 focus:border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white'
+            >
+              {prices.map((price: Price, index: number) => (
+                <option key={index} value={index}>
+                  ${price.amount.toLocaleString()} USD
+                  {price.label ? ` - ${price.label}` : ''}
+                  {price.description ? ` (${price.description})` : ''}
+                </option>
+              ))}
+            </select>
+            {showAddOns && (
+              <AddOns
+                project={project}
+                isArabic={isArabic}
+                className='mt-2 rounded-lg border border-gray-200 bg-gray-50 p-3 dark:border-gray-800 dark:bg-gray-800'
+              />
+            )}
+            <Button
+              variant='primary'
+              size='medium'
+              className='w-full'
+              onClick={handleDonate}
+            >
+              {isArabic ? 'تبرع الآن' : 'Donate Now'}
+            </Button>
+          </div>
+        )}
       </div>
 
       {/* Desktop: Sidebar */}
