@@ -8,6 +8,8 @@ import Button from '../components/Button'
 import { supabase } from '@/lib/supabase'
 import { clearCart } from '@/lib/store/cartSlice'
 import { useRouter } from '@/src/navigation'
+import { toast } from 'sonner'
+import { FiCopy, FiCheck } from 'react-icons/fi'
 
 type Method = 'wise'
 
@@ -32,6 +34,31 @@ export default function CheckoutPage() {
       `KHC-${Date.now().toString(36).toUpperCase()}-${Math.random().toString(36).slice(2, 6).toUpperCase()}`
   )
   const [error, setError] = useState<string | null>(null)
+  const [copied, setCopied] = useState<{
+    transferCode: boolean
+    accountId: boolean
+    phoneNumber: boolean
+  }>({
+    transferCode: false,
+    accountId: false,
+    phoneNumber: false
+  })
+
+  const copyToClipboard = async (
+    text: string,
+    key: 'transferCode' | 'accountId' | 'phoneNumber'
+  ) => {
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopied(prev => ({ ...prev, [key]: true }))
+      toast.success(isArabic ? 'تم النسخ إلى الحافظة' : 'Copied to clipboard!')
+      setTimeout(() => {
+        setCopied(prev => ({ ...prev, [key]: false }))
+      }, 2000)
+    } catch (err) {
+      toast.error(isArabic ? 'فشل النسخ' : 'Failed to copy to clipboard')
+    }
+  }
 
   const onSubmit = async () => {
     setSubmitting(true)
@@ -200,19 +227,48 @@ export default function CheckoutPage() {
                   </div>
 
                   <div className='mb-4 space-y-3 rounded-lg bg-gray-50 p-4 dark:bg-gray-800/50'>
-                    {wise.rows.map((r, i) => (
-                      <div
-                        key={i}
-                        className='flex items-center justify-between border-b border-gray-200 pb-3 last:border-0 last:pb-0 dark:border-gray-700'
-                      >
-                        <span className='text-sm font-medium text-gray-600 dark:text-gray-400'>
-                          {r.k}
-                        </span>
-                        <span className='text-sm font-semibold text-gray-900 dark:text-white'>
-                          {r.v}
-                        </span>
-                      </div>
-                    ))}
+                    {wise.rows.map((r, i) => {
+                      const isAccountId =
+                        r.k === (isArabic ? 'معرف الحساب' : 'Account ID')
+                      const isPhoneNumber =
+                        r.k === (isArabic ? 'رقم الهاتف' : 'Phone Number')
+
+                      return (
+                        <div
+                          key={i}
+                          className='flex items-center justify-between border-b border-gray-200 pb-3 last:border-0 last:pb-0 dark:border-gray-700'
+                        >
+                          <span className='text-sm font-medium text-gray-600 dark:text-gray-400'>
+                            {r.k}
+                          </span>
+                          <div className='flex items-center gap-2'>
+                            <span className='text-sm font-semibold text-gray-900 dark:text-white'>
+                              {r.v}
+                            </span>
+                            {(isAccountId || isPhoneNumber) && (
+                              <button
+                                onClick={() =>
+                                  copyToClipboard(
+                                    r.v,
+                                    isAccountId ? 'accountId' : 'phoneNumber'
+                                  )
+                                }
+                                className='rounded-md p-1.5 text-gray-500 transition-colors hover:bg-gray-200 hover:text-primary-300 dark:hover:bg-gray-700 dark:hover:text-primary-400'
+                                title={isArabic ? 'نسخ' : 'Copy'}
+                              >
+                                {copied[
+                                  isAccountId ? 'accountId' : 'phoneNumber'
+                                ] ? (
+                                  <FiCheck className='h-4 w-4 text-green-600 dark:text-green-400' />
+                                ) : (
+                                  <FiCopy className='h-4 w-4' />
+                                )}
+                              </button>
+                            )}
+                          </div>
+                        </div>
+                      )
+                    })}
                   </div>
 
                   <Button
@@ -269,9 +325,22 @@ export default function CheckoutPage() {
                     : 'Use the following transfer code in your payment reference:'}
                 </p>
                 <div className='rounded-lg bg-white p-4 text-center dark:bg-gray-900'>
-                  <p className='font-mono text-xl font-bold tracking-wider text-primary-300'>
-                    {code}
-                  </p>
+                  <div className='flex items-center justify-center gap-3'>
+                    <p className='font-mono text-xl font-bold tracking-wider text-primary-300'>
+                      {code}
+                    </p>
+                    <button
+                      onClick={() => copyToClipboard(code, 'transferCode')}
+                      className='rounded-md p-2 text-gray-500 transition-colors hover:bg-gray-100 hover:text-primary-300 dark:hover:bg-gray-800 dark:hover:text-primary-400'
+                      title={isArabic ? 'نسخ' : 'Copy'}
+                    >
+                      {copied.transferCode ? (
+                        <FiCheck className='h-5 w-5 text-green-600 dark:text-green-400' />
+                      ) : (
+                        <FiCopy className='h-5 w-5' />
+                      )}
+                    </button>
+                  </div>
                 </div>
               </div>
 

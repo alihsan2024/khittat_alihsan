@@ -328,6 +328,17 @@ export default async function HomePage() {
                   +961 3 976 426
                 </a>
               </div>
+              <div className='rounded-xl border border-gray-200 bg-white p-5 ring-1 ring-black/5 dark:border-gray-800 dark:bg-gray-900 dark:ring-white/10'>
+                <p className='font-semibold text-primary-300'>WhatsApp</p>
+                <a
+                  href='https://wa.me/96176482281'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='text-sm text-gray-700 hover:text-primary-300 dark:text-gray-300 dark:hover:text-primary-400'
+                >
+                  +961 76 482 281
+                </a>
+              </div>
             </div>
           </div>
         </div>

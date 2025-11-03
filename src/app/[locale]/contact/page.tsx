@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
-import { FiMail, FiMapPin, FiClock } from 'react-icons/fi'
+import { FiMail, FiMapPin, FiClock, FiPhone } from 'react-icons/fi'
 
 export async function generateMetadata({
   params
@@ -85,6 +85,22 @@ export default async function ContactPage() {
               className='text-gray-700 transition-colors hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400'
             >
               khitattalihsan@gmail.com
+            </a>
+          </div>
+
+          {/* WhatsApp */}
+          <div className='rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900'>
+            <div className='mb-4 flex items-center gap-3'>
+              <FiPhone className='h-6 w-6 text-primary-500' />
+              <h3 className='text-lg font-bold text-primary-500'>WhatsApp</h3>
+            </div>
+            <a
+              href='https://wa.me/96176482281'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-gray-700 transition-colors hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400'
+            >
+              +961 76 482 281
             </a>
           </div>
         </div>
