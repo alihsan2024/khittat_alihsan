@@ -106,7 +106,7 @@ export default async function ProjectDetailPage({
         title: 'The Gift of Sight in Islam',
         content: `Sight is not just a sense; it is one of Allah's greatest blessings and a trust we are commanded to protect.\n\nThe Prophet ﷺ said:\n"Whoever relieves a believer's distress of the distressful aspects of this world, Allah will rescue him from a difficulty of the difficulties of the Hereafter." - Muslim\n\nBy restoring someone's sight, you are relieving one of the greatest hardships. And because this gift lasts a lifetime, it becomes sadaqah jariyah, ongoing charity that continues to bring you reward.`
       },
-      callToAction: `You can be the reason someone steps out of darkness and into light.\n\n$110 = One cataract surgery\n\n$220 = Two surgeries\n\n$330 = Three surgeries\n\n$440 = Four surgeries\n\nYour donation restores dignity, education, independence, and connection.\n\nSight means seeing a loved one's smile. Reading the Qur'an. Walking safely to school. Working with dignity. For millions, these are dreams that can become reality through your support.\n\nYour donation restores sight and transforms lives. Help us reach more people in need of vision care.`
+      callToAction: `You can be the reason someone steps out of darkness and into light.\n\n$75 = One cataract surgery\n\n$150 = Two surgeries\n\n$225 = Three surgeries\n\n$300 = Four surgeries\n\nYour donation restores dignity, education, independence, and connection.\n\nSight means seeing a loved one's smile. Reading the Qur'an. Walking safely to school. Working with dignity. For millions, these are dreams that can become reality through your support.\n\nYour donation restores sight and transforms lives. Help us reach more people in need of vision care.`
     },
     ar: {
       intro: `هل تعلم أن المياه البيضاء (الكتاركت) هي السبب الأول للعمى في العالم، حيث تؤثر على أكثر من 65 مليون إنسان؟ المأساة ليست في عدم وجود علاج — فعملية إزالة المياه البيضاء آمنة وسريعة وتعيد البصر خلال 20 دقيقة فقط. المأساة هي أن الفقراء لا يستطيعون تحمل تكاليفها.\n\nلكن هناك أمل — ويمكنك أن تكون جزءاً منه.\n\nمشروع هدية البصر يقدم عمليات مجانية، ورعاية متابعة، ووجبات ساخنة، وحتى مصاحف كهدية لأولئك الذين يعيشون في الظلام.`,
@@ -136,9 +136,9 @@ export default async function ProjectDetailPage({
       },
       whyImportant: {
         title: 'لماذا هذا المشروع مهم؟',
-        content: `تُظهر تقارير منظمة الصحة العالمية أن المياه البيضاء تسبب 51٪ من حالات العمى في العالم، أي أكثر من 65 مليون إنسان.\n\nهذا يعني أن أكثر من نصف المكفوفين في العالم يمكنهم استعادة بصرهم بعملية بسيطة وآمنة وميسورة التكلفة.\n\nولكن بدون دعم، يبقى الملايين محاصرين في الظلام.\n\nالمياه البيضاء تسبب ما يقارب نصف حالات العمى عالمياً\n\nالعملية تستغرق 20 دقيقة فقط\n\n110$ تكفي لإعادة البصر مدى الحياة\n\nتخيّل أن تكون أنت السبب في أن يرى شخص من جديد.`
+        content: `تُظهر تقارير منظمة الصحة العالمية أن المياه البيضاء تسبب 51٪ من حالات العمى في العالم، أي أكثر من 65 مليون إنسان.\n\nهذا يعني أن أكثر من نصف المكفوفين في العالم يمكنهم استعادة بصرهم بعملية بسيطة وآمنة وميسورة التكلفة.\n\nولكن بدون دعم، يبقى الملايين محاصرين في الظلام.\n\nالمياه البيضاء تسبب ما يقارب نصف حالات العمى عالمياً\n\nالعملية تستغرق 20 دقيقة فقط\n\n$75 USD تكفي لإعادة البصر مدى الحياة\n\nتخيّل أن تكون أنت السبب في أن يرى شخص من جديد.`
       },
-      callToAction: `يمكنك أن تكون السبب في خروج إنسان من الظلام إلى النور.\n\n110$ = عملية واحدة\n\n220$ = عمليتان\n\n330$ = ثلاث عمليات\n\n440$ = أربع عمليات\n\n\n\nتبرعك لا يعيد البصر فقط، بل يعيد الكرامة، والتعليم، والاستقلالية، والقدرة على الارتباط بالأحبة.\n\nالرؤية تعني أن يرى المرء ابتسامة أحبته، أن يقرأ القرآن، أن يمشي بأمان إلى المدرسة، وأن يعمل بكرامة.\n\nبالنسبة للملايين، هذه مجرد أحلام — لكنها يمكن أن تتحقق بفضل دعمك.\n\nمعاً، يمكننا كسر دائرة العمى الذي يمكن منعه.\n\nتبرعك يجلب النور حيث كان الظلام.\nتبرعك يعيد البصر ويغير الحياة.`
+      callToAction: `يمكنك أن تكون السبب في خروج إنسان من الظلام إلى النور.\n\n$75 = عملية واحدة\n\n$150 = عمليتان\n\n$225 = ثلاث عمليات\n\n$300 = أربع عمليات\n\n\n\nتبرعك لا يعيد البصر فقط، بل يعيد الكرامة، والتعليم، والاستقلالية، والقدرة على الارتباط بالأحبة.\n\nالرؤية تعني أن يرى المرء ابتسامة أحبته، أن يقرأ القرآن، أن يمشي بأمان إلى المدرسة، وأن يعمل بكرامة.\n\nبالنسبة للملايين، هذه مجرد أحلام — لكنها يمكن أن تتحقق بفضل دعمك.\n\nمعاً، يمكننا كسر دائرة العمى الذي يمكن منعه.\n\nتبرعك يجلب النور حيث كان الظلام.\nتبرعك يعيد البصر ويغير الحياة.`
     }
   }
 
@@ -187,7 +187,8 @@ export default async function ProjectDetailPage({
         content: `Your Zakat is distributed through verified, Shariah-compliant programs that include:\n\nEmergency food and shelter\n\nOrphan support\n\nMedical assistance\n\nClean water\n\nEducation and sustainable solutions\n\nWe serve vulnerable communities across the globe to reach the most vulnerable communities.`
       },
       whyCalculator: {
-        title: "Why Use Al-Ihsan Foundation's Zakat Calculator?",
+        title:
+          "Why Use Khitat Al-Ihsan Charity Association's Zakat Calculator?",
         items: [
           'Simple & Fast: User-friendly, mobile-ready',
           'Customisable: Add debts, investments, gold, and more',
@@ -197,8 +198,8 @@ export default async function ProjectDetailPage({
         ]
       },
       whyChoose: {
-        title: 'Why Choose Al-Ihsan Foundation?',
-        content: `At Al-Ihsan Foundation, we treat your Zakat as an amanah (trust).\n\nThat means:\n\nShariah-compliant processes\n\nClear reporting and project tracking\n\nGlobal reach, local impact\n\nSupervised by trusted scholars\n\nZakat is kept separate from other funds\n\nYou give with sincerity. We deliver with Ihsan (excellence).`
+        title: 'Why Choose Khitat Al-Ihsan Charity Association?',
+        content: `At Khitat Al-Ihsan Charity Association, we treat your Zakat as an amanah (trust).\n\nThat means:\n\nShariah-compliant processes\n\nClear reporting and project tracking\n\nGlobal reach, local impact\n\nSupervised by trusted scholars\n\nZakat is kept separate from other funds\n\nYou give with sincerity. We deliver with Ihsan (excellence).`
       },
       importance: {
         title: 'Why Is Zakat al-Maal So Important?',
@@ -206,7 +207,7 @@ export default async function ProjectDetailPage({
       },
       impact: {
         title: 'Real-World Impact of Your Zakat',
-        content: `When you give your Zakat through Al-Ihsan Foundation, it reaches the hearts that need it most. You give:\n\nA widow the means to feed her children with dignity\n\nAn elderly person the independence they deserve\n\nA refugee family the safety and privacy of a home\n\nAn orphan the opportunity to learn, grow, and dream\n\nAn entire village access to clean, life-saving water\n\nEvery dollar is used with intention, turning your 2.5% into food, medicine, shelter, and hope. It's more than aid. Its dignity restored.`
+        content: `When you give your Zakat through Khitat Al-Ihsan Charity Association, it reaches the hearts that need it most. You give:\n\nA widow the means to feed her children with dignity\n\nAn elderly person the independence they deserve\n\nA refugee family the safety and privacy of a home\n\nAn orphan the opportunity to learn, grow, and dream\n\nAn entire village access to clean, life-saving water\n\nEvery dollar is used with intention, turning your 2.5% into food, medicine, shelter, and hope. It's more than aid. Its dignity restored.`
       },
       mercy: {
         title: 'The Mercy in Zakat',
@@ -325,7 +326,7 @@ export default async function ProjectDetailPage({
       },
       whatDonation: {
         title: 'What Your Donation Provides',
-        content: `Through Al-Ihsan Foundation's Health & Medical Appeal, we work with trusted partners to deliver life-changing aid where it is needed most.\n\nYour generosity provides:\n\nMobility Aids: wheelchairs, crutches, walkers\n\nEssential Medicine: treatment for chronic conditions\n\nSpecialised Care: equipment for those living with disability\n\nBasic Needs: food aid and financial assistance for vulnerable families\n\nAccess to Healthcare: helping families reach ongoing medical support\n\nEvery wheelchair donated, every prescription filled, every aid delivered is relief and dignity restored.`
+        content: `Through Khitat Al-Ihsan Charity Association's Health & Medical Appeal, we work with trusted partners to deliver life-changing aid where it is needed most.\n\nYour generosity provides:\n\nMobility Aids: wheelchairs, crutches, walkers\n\nEssential Medicine: treatment for chronic conditions\n\nSpecialised Care: equipment for those living with disability\n\nBasic Needs: food aid and financial assistance for vulnerable families\n\nAccess to Healthcare: helping families reach ongoing medical support\n\nEvery wheelchair donated, every prescription filled, every aid delivered is relief and dignity restored.`
       },
       whyMatters: {
         title: 'Why This Appeal Matters Now',
@@ -416,7 +417,7 @@ export default async function ProjectDetailPage({
       },
       beTheReason: {
         title: 'Be the Reason Someone Gets to Eat',
-        content: `Just one meal can mean the world to a hungry child, and just one donation can help a struggling family survive.\n\nAl-Ihsan Foundation is committed to feeding the needy globally. With your help, we provide meals, staples, and essential support to the most vulnerable.\n\nYou Can Make a Difference\n\nWhen you give, you're not just donating, you're providing hope, dignity, and relief.\n\nYour support means everything. Help end hunger today.`
+        content: `Just one meal can mean the world to a hungry child, and just one donation can help a struggling family survive.\n\nKhitat Al-Ihsan Charity Association is committed to feeding the needy globally. With your help, we provide meals, staples, and essential support to the most vulnerable.\n\nYou Can Make a Difference\n\nWhen you give, you're not just donating, you're providing hope, dignity, and relief.\n\nYour support means everything. Help end hunger today.`
       }
     },
     ar: {
@@ -466,7 +467,7 @@ export default async function ProjectDetailPage({
       },
       howYouCanHelp: {
         title: 'How You Can Help',
-        content: `Your sadaqah today provides life-saving relief:\n\n$30 = 10 loaves of bread baked and delivered\n\n$55 = 5 hot meals from our community kitchens\n\n$380 = 1,000L Water Truck supplying clean water\n\nDonate now. Stand with Gaza. Be the reason a family survives receives life saving aid.`
+        content: `Your sadaqah today provides life-saving relief:\n\n$20 = 10 loaves of bread baked and delivered\n\n$36 = 5 hot meals from our community kitchens\n\n$250 = 1,000L Water Truck supplying clean water\n\nDonate now. Stand with Gaza. Be the reason a family survives receives life saving aid.`
       }
     },
     ar: {
@@ -489,7 +490,7 @@ export default async function ProjectDetailPage({
       },
       howYouCanHelp: {
         title: 'كيف يمكنك المساعدة؟',
-        content: `صدقتك اليوم توفّر إغاثة منقذة للحياة:\n\n30 دولارًا = 10 أرغفة خبز تُخبز وتُوزع\n\n55 دولارًا = 5 وجبات ساخنة من مطابخنا المجتمعية\n\n380 دولارًا = شاحنة مياه 1000 لتر توصل مياه نظيفة\n\nتبرع الآن. قف مع غزة. كن السبب في بقاء أسرة على قيد الحياة.`
+        content: `صدقتك اليوم توفّر إغاثة منقذة للحياة:\n\n20 دولارًا = 10 أرغفة خبز تُخبز وتُوزع\n\n36 دولارًا = 5 وجبات ساخنة من مطابخنا المجتمعية\n\n250 دولارًا = شاحنة مياه 1000 لتر توصل مياه نظيفة\n\nتبرع الآن. قف مع غزة. كن السبب في بقاء أسرة على قيد الحياة.`
       }
     }
   }
@@ -528,7 +529,7 @@ export default async function ProjectDetailPage({
       },
       giveGift: {
         title: 'Give the Gift of Food Today',
-        content: `With your donation, we can continue to provide hot, wholesome meals for those who need it most. Whether it's one meal or 100, every dish you help deliver brings relief, hope, and the mercy of Allah ﷻ.\n\n$90 = 30 hot meal\n$180 = 60 meals\n$360 = 120 meals\n\nDonate today, and feed someone who hasn't eaten today.`
+        content: `With your donation, we can continue to provide hot, wholesome meals for those who need it most. Whether it's one meal or 100, every dish you help deliver brings relief, hope, and the mercy of Allah ﷻ.\n\n$60 = 30 hot meal\n$120 = 60 meals\n$235 = 120 meals\n\nDonate today, and feed someone who hasn't eaten today.`
       }
     },
     ar: {
@@ -582,7 +583,7 @@ export default async function ProjectDetailPage({
       },
       whereWeBuild: {
         title: 'Where We Build Water Wells',
-        content: `At Al-Ihsan Foundation, your generosity brings safe water to families across three countries:\n\nSri Lanka – Shallow Water Wells: Built in rural villages where families rely on rivers.\n\nUganda – Deep Hand-Pumped Water Wells: A reliable source of clean water for villages where children walk hours to fetch unsafe water. 1,000 liter water tank + wudu station\n\nIndonesia – Deep Electric Water Wells with Wudu Stations: Equipped with taps and a 1,000-litre tank, serving families, schools and Masajid for drinking and ablution.\n\nEach well is built to last, bringing relief, dignity, and a legacy of Sadaqah Jariyah to those who give.`
+        content: `At Khitat Al-Ihsan Charity Association, your generosity brings safe water to families across three countries:\n\nSri Lanka – Shallow Water Wells: Built in rural villages where families rely on rivers.\n\nUganda – Deep Hand-Pumped Water Wells: A reliable source of clean water for villages where children walk hours to fetch unsafe water. 1,000 liter water tank + wudu station\n\nIndonesia – Deep Electric Water Wells with Wudu Stations: Equipped with taps and a 1,000-litre tank, serving families, schools and Masajid for drinking and ablution.\n\nEach well is built to last, bringing relief, dignity, and a legacy of Sadaqah Jariyah to those who give.`
       },
       cost: {
         title: 'How Much Does a Water Well Cost?',
@@ -609,11 +610,11 @@ export default async function ProjectDetailPage({
       },
       whereWeBuild: {
         title: 'أين نبني آبار المياه: سريلانكا، أوغندا، إندونيسيا',
-        content: `من خلال جمعية خطط الإحسان، تصل تبرعاتكم إلى ثلاث دول أساسية:\n\nسريلانكا – بئر سطحي (358$): يوفر مياه الشرب الآمنة للقرى الريفية.\n\nأوغندا – بئر عميق بمضخة يدوية (1040$): مصدر دائم وآمن للمياه للأسر التي كانت تعتمد على الأنهار الملوثة.\n\nإندونيسيا – بئر عميق كهربائي مع محطة وضوء (1040$+): مجهز بخزان 1000 لتر وصنابير، يخدم العائلات والمساجد للشرب والوضوء.`
+        content: `من خلال جمعية خطط الإحسان، تصل تبرعاتكم إلى ثلاث دول أساسية:\n\nسريلانكا – بئر سطحي ($358 USD): يوفر مياه الشرب الآمنة للقرى الريفية.\n\nأوغندا – بئر عميق بمضخة يدوية ($1040 USD): مصدر دائم وآمن للمياه للأسر التي كانت تعتمد على الأنهار الملوثة.\n\nإندونيسيا – بئر عميق كهربائي مع محطة وضوء ($1040+ USD): مجهز بخزان 1000 لتر وصنابير، يخدم العائلات والمساجد للشرب والوضوء.`
       },
       cost: {
         title: 'تكلفة حفر الآبار',
-        content: `بئر سطحي في سريلانكا: 358$\n\nبئر عميق في أوغندا (مضخة يدوية): 1040$\n\nبئر عميق في إندونيسيا (كهربائي مع محطة وضوء): 1040$+\n\nبئر عميق مع محطة مياه: 1755$`
+        content: `بئر سطحي في سريلانكا: $358 USD\n\nبئر عميق في أوغندا (مضخة يدوية): $1040 USD\n\nبئر عميق في إندونيسيا (كهربائي مع محطة وضوء): $1040+ USD\n\nبئر عميق مع محطة مياه: $1755 USD`
       },
       sadaqahJariyah: {
         title: 'الصدقة الجارية: أعظم صدقة هي سقي الماء',
@@ -1644,26 +1645,28 @@ export default async function ProjectDetailPage({
               )}
 
               {/* Call To Action (Sadaqah Sacrifice) */}
-              {'callToAction' in content && (content as any).callToAction && (
-                <div>
-                  <div className='space-y-3 text-base leading-7 text-gray-700 dark:text-gray-300'>
-                    {(content as any).callToAction
-                      .split('\n\n')
-                      .map((para: string, idx: number) => (
-                        <p
-                          key={idx}
-                          className={
-                            para.includes('$') || para.includes('=')
-                              ? 'font-semibold'
-                              : ''
-                          }
-                        >
-                          {para}
-                        </p>
-                      ))}
+              {'callToAction' in content &&
+                (content as any).callToAction &&
+                !isGiftOfSight && (
+                  <div>
+                    <div className='space-y-3 text-base leading-7 text-gray-700 dark:text-gray-300'>
+                      {(content as any).callToAction
+                        .split('\n\n')
+                        .map((para: string, idx: number) => (
+                          <p
+                            key={idx}
+                            className={
+                              para.includes('$') || para.includes('=')
+                                ? 'font-semibold'
+                                : ''
+                            }
+                          >
+                            {para}
+                          </p>
+                        ))}
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
 
               {/* When (Zakat only) */}
               {'when' in content &&
@@ -2076,18 +2079,116 @@ export default async function ProjectDetailPage({
                             }
                           ] satisfies Price[]
                         }
-                      : {
-                          id: project.id,
-                          slug: project.slug,
-                          title: displayTitle,
-                          image_url: project.image_url,
-                          brief_description: displayBrief,
-                          long_description: project.long_description,
-                          upsell_text: project.upsell_text,
-                          created_at: project.created_at,
-                          updated_at: project.updated_at,
-                          prices: project.prices
-                        }
+                      : isGiftOfSight
+                        ? {
+                            id: project.id,
+                            slug: project.slug,
+                            title: displayTitle,
+                            image_url: project.image_url,
+                            brief_description: displayBrief,
+                            long_description: project.long_description,
+                            upsell_text: project.upsell_text,
+                            created_at: project.created_at,
+                            updated_at: project.updated_at,
+                            prices: [
+                              {
+                                amount: 75,
+                                currency: 'USD',
+                                label: isArabic
+                                  ? 'عملية واحدة'
+                                  : 'One Cataract Surgery',
+                                description: isArabic
+                                  ? 'إعادة البصر لشخص واحد'
+                                  : 'Restore sight for one person'
+                              },
+                              {
+                                amount: 150,
+                                currency: 'USD',
+                                label: isArabic
+                                  ? 'عمليتان'
+                                  : 'Two Cataract Surgeries',
+                                description: isArabic
+                                  ? 'إعادة البصر لشخصين'
+                                  : 'Restore sight for two people'
+                              },
+                              {
+                                amount: 225,
+                                currency: 'USD',
+                                label: isArabic
+                                  ? 'ثلاث عمليات'
+                                  : 'Three Cataract Surgeries',
+                                description: isArabic
+                                  ? 'إعادة البصر لثلاثة أشخاص'
+                                  : 'Restore sight for three people'
+                              },
+                              {
+                                amount: 300,
+                                currency: 'USD',
+                                label: isArabic
+                                  ? 'أربع عمليات'
+                                  : 'Four Cataract Surgeries',
+                                description: isArabic
+                                  ? 'إعادة البصر لأربعة أشخاص'
+                                  : 'Restore sight for four people'
+                              }
+                            ] satisfies Price[]
+                          }
+                        : isGazaEmergency
+                          ? {
+                              id: project.id,
+                              slug: project.slug,
+                              title: displayTitle,
+                              image_url: project.image_url,
+                              brief_description: displayBrief,
+                              long_description: project.long_description,
+                              upsell_text: project.upsell_text,
+                              created_at: project.created_at,
+                              updated_at: project.updated_at,
+                              prices: [
+                                {
+                                  amount: 20,
+                                  currency: 'USD',
+                                  label: isArabic
+                                    ? '10 أرغفة خبز'
+                                    : '10 Loaves of Bread',
+                                  description: isArabic
+                                    ? 'خبز طازج يُخبز ويُوزع'
+                                    : 'Fresh bread baked and delivered'
+                                },
+                                {
+                                  amount: 36,
+                                  currency: 'USD',
+                                  label: isArabic
+                                    ? '5 وجبات ساخنة'
+                                    : '5 Hot Meals',
+                                  description: isArabic
+                                    ? 'من مطابخنا المجتمعية'
+                                    : 'From our community kitchens'
+                                },
+                                {
+                                  amount: 250,
+                                  currency: 'USD',
+                                  label: isArabic
+                                    ? 'شاحنة مياه 1000 لتر'
+                                    : '1,000L Water Truck',
+                                  description: isArabic
+                                    ? 'توفير مياه نظيفة'
+                                    : 'Supplying clean water'
+                                }
+                              ] satisfies Price[]
+                            }
+                          : {
+                              id: project.id,
+                              slug: project.slug,
+                              title: displayTitle,
+                              image_url: project.image_url,
+                              brief_description: displayBrief,
+                              long_description: project.long_description,
+                              upsell_text: project.upsell_text,
+                              created_at: project.created_at,
+                              updated_at: project.updated_at,
+                              prices: project.prices
+                            }
               }
               isArabic={isArabic}
             />
