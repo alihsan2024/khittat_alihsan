@@ -630,7 +630,7 @@ export default async function ProjectDetailPage({
   // Sadaqah Sacrifice Project Content
   const sadaqahSacrificeContent = {
     en: {
-      intro: `Thank Allah ﷻ through Sadaqah Sacrifice while feeding families in need. Goat $88, Sheep $95, Waleemah $117.`,
+      intro: `Thank Allah ﷻ through Sadaqah Sacrifice while feeding families in need. Goat $88, Sheep $95, Waleemah $80.`,
       whatIsSadaqah: {
         title: 'What is Sadaqah Sacrifice?',
         content: `Sadaqah Sacrifice is one of the most heartfelt ways to thank Allah ﷻ for His countless blessings. This sacrifice is voluntary. It is done out of gratitude, whether after a safe journey, recovering from illness, moving into a new home, or simply reflecting on Allah's generosity in your life.\n\nAt Khitat Al-Ihsan Charity Social Association, we arrange your Sadaqah Sacrifice in Bangladesh, Uganda, and Lebanon. Families who rarely have the chance to eat meat will share in your offering, making your gratitude a source of nourishment and joy for those in hardship.`
@@ -645,7 +645,7 @@ export default async function ProjectDetailPage({
       },
       cost: {
         title: 'How Much Does Sadaqah Sacrifice Cost?',
-        content: `Goat Sacrifice – $88\nAvailable in Uganda & Bangladesh\n\nSheep Sacrifice (small) – $95\nAvailable in Uganda\n\nSheep Sacrifice – Lebanon\nContact the office for a quote (prices in USD, subject to exchange fluctuations).\n\nOptional Add-ons:\n\n25 kg Rice – $39\n\nCommunity Feast (Waleemah) – $117\nIncludes:\n\nCommunity feast preparation - $78\n\n25 kg rice - $39. Required for all Waleemah.\n\nFeeds up to 100 people.\n\nNote: Waleemah can only be arranged together with a Sadaqah Sacrifice.`
+        content: `Goat Sacrifice – $88\nAvailable in Uganda & Bangladesh\n\nSheep Sacrifice (small) – $95\nAvailable in Uganda\n\nSheep Sacrifice – Lebanon\nContact the office for a quote (prices in USD, subject to exchange fluctuations).\n\nOptional Add-ons:\n\n25 kg Rice – $39\n\nCommunity Feast (Waleemah) – $80\nIncludes:\n\nCommunity feast preparation - $78\n\n25 kg rice - $39. Required for all Waleemah.\n\nFeeds up to 100 people.\n\nNote: Waleemah can only be arranged together with a Sadaqah Sacrifice.`
       },
       whatIsWaleemah: {
         title: 'What is a Community Feast (Waleemah)?',
@@ -662,7 +662,7 @@ export default async function ProjectDetailPage({
       callToAction: `Offer Your Sadaqah Sacrifice Today\n\nA single sacrifice can fill empty plates, bring joy to forgotten families, and carry your gratitude to Allah ﷻ into action.\n\nMay Allah ﷻ accept your offering, heal the sick, bless your loved ones, and increase you in goodness and barakah. Ameen.`
     },
     ar: {
-      intro: `اشكروا الله ﷻ من خلال ذبيحة الصدقة، وأطعموا بها الأسر المحتاجة. الماعز 88 دولارًا، الخروف 95 دولارًا، الوليمة 117 دولارًا.`,
+      intro: `اشكروا الله ﷻ من خلال ذبيحة الصدقة، وأطعموا بها الأسر المحتاجة. الماعز 88 دولارًا، الخروف 95 دولارًا، الوليمة 80 دولارًا.`,
       whatIsSadaqah: {
         title: 'ما هي ذبيحة الصدقة؟',
         content: `ذبيحة الصدقة من أصدق وسائل شكر الله ﷻ على نعمه التي لا تُحصى. وهي ذبيحة تطوعية، ليست واجبة، يقوم بها المسلم تعبيرًا عن الامتنان؛ بعد سفرٍ آمن، أو شفاءٍ من مرض، أو الانتقال إلى منزل جديد، أو حتى عند التأمل في فضل الله وكرمه.\n\nفي جمعية خطط الإحسان الخيرية الاجتماعية، نقوم بترتيب ذبائح الصدقة في بنغلاديش وأوغندا ولبنان. لتصل لحوم الأضاحي إلى الأسر التي نادرًا ما تتذوق اللحم، فيتحول شكركم إلى غذاءٍ وفرحٍ لمن يعيشون في ضيق.`
@@ -677,7 +677,7 @@ export default async function ProjectDetailPage({
       },
       cost: {
         title: 'كم تبلغ تكلفة ذبيحة الصدقة؟',
-        content: `ذبيحة ماعز – 88 دولارًا\nمتوفرة في أوغندا وبنغلاديش\n\nذبيحة خروف (صغير) – 95 دولارًا\nمتوفرة في أوغندا\n\nذبيحة خروف – لبنان\nيُرجى التواصل مع المكتب للحصول على السعر (بالدولار الأمريكي، حسب تقلبات الصرف).\n\nإضافات اختيارية:\n\n25 كجم أرز – 39 دولارًا\n\nوليمة مجتمعية (وليمة) – 117 دولارًا\nتشمل:\n\nتجهيز الوليمة وطهي الذبيحة – 78 دولارًا\n\n25 كجم أرز – 39 دولارًا\n(مطلوبة لجميع الولائم – تكفي لما يصل إلى 100 شخص).`
+        content: `ذبيحة ماعز – 88 دولارًا\nمتوفرة في أوغندا وبنغلاديش\n\nذبيحة خروف (صغير) – 95 دولارًا\nمتوفرة في أوغندا\n\nذبيحة خروف – لبنان\nيُرجى التواصل مع المكتب للحصول على السعر (بالدولار الأمريكي، حسب تقلبات الصرف).\n\nإضافات اختيارية:\n\n25 كجم أرز – 39 دولارًا\n\nوليمة مجتمعية (وليمة) – 80 دولارًا\nتشمل:\n\nتجهيز الوليمة وطهي الذبيحة – 78 دولارًا\n\n25 كجم أرز – 39 دولارًا\n(مطلوبة لجميع الولائم – تكفي لما يصل إلى 100 شخص).`
       },
       whatIsWaleemah: {
         title: 'ما هي الوليمة؟',
@@ -718,7 +718,7 @@ export default async function ProjectDetailPage({
       cost: {
         title: 'How Much Does Aqeeqah Cost?',
         content:
-          'Goat Sacrifice – $88\nAvailable in: Uganda & Bangladesh\n\nSheep Sacrifice (small) – $95\nAvailable in: Uganda\n\nSheep Sacrifice – Lebanon\nContact the office for a quote (prices in USD, subject to exchange fluctuations).\n\nOptional Add-ons:\n\n25 kg Rice – $39\n\nCommunity Feast (Waleemah) – $117\nIncludes:\n\nCommunity feast preparation - $78\n\n25 kg rice - $39. Required for all Waleemah.\n\nNote: Waleemah can only be arranged together with an Aqeeqah sacrifice.'
+          'Goat Sacrifice – $88\nAvailable in: Uganda & Bangladesh\n\nSheep Sacrifice (small) – $95\nAvailable in: Uganda\n\nSheep Sacrifice – Lebanon\nContact the office for a quote (prices in USD, subject to exchange fluctuations).\n\nOptional Add-ons:\n\n25 kg Rice – $39\n\nCommunity Feast (Waleemah) – $80\nIncludes:\n\nCommunity feast preparation - $78\n\n25 kg rice - $39. Required for all Waleemah.\n\nNote: Waleemah can only be arranged together with an Aqeeqah sacrifice.'
       },
       whatIsWaleemah: {
         title: 'What Is A Community Feast (Waleemah)?',
@@ -754,7 +754,7 @@ export default async function ProjectDetailPage({
       cost: {
         title: 'كم تكلفة العقيقة؟',
         content:
-          'ذبيحة الماعز – 88 دولارًا\nمتوفرة في: أوغندا وبنغلاديش\n\nذبيحة الخروف (صغير) – 95 دولارًا\nمتوفرة في: أوغندا\n\nذبيحة الخروف – لبنان\nيرجى التواصل مع المكتب للحصول على السعر الحالي (بالدولار الأمريكي وقد يتغيّر تبعًا لتقلبات سعر الصرف).\n\nخيارات إضافية:\n\n25 كغ أرز – 39 دولارًا\n\nوليمة (وليمة جماعية) – 117 دولارًا\nتشمل تجهيز وطهي الذبيحة (78 دولارًا) + 25 كغ أرز (39 دولارًا).\n\nملاحظة: الوليمة مرتبطة بالعقيقة ولا يمكن طلبها منفصلة.'
+          'ذبيحة الماعز – 88 دولارًا\nمتوفرة في: أوغندا وبنغلاديش\n\nذبيحة الخروف (صغير) – 95 دولارًا\nمتوفرة في: أوغندا\n\nذبيحة الخروف – لبنان\nيرجى التواصل مع المكتب للحصول على السعر الحالي (بالدولار الأمريكي وقد يتغيّر تبعًا لتقلبات سعر الصرف).\n\nخيارات إضافية:\n\n25 كغ أرز – 39 دولارًا\n\nوليمة (وليمة جماعية) – 80 دولارًا\nتشمل تجهيز وطهي الذبيحة (78 دولارًا) + 25 كغ أرز (39 دولارًا).\n\nملاحظة: الوليمة مرتبطة بالعقيقة ولا يمكن طلبها منفصلة.'
       },
       whatIsWaleemah: {
         title: 'ما هي الوليمة؟',
