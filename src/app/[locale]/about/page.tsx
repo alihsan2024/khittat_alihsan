@@ -67,6 +67,15 @@ export default async function AboutPage() {
               <div className='space-y-6 text-gray-700 dark:text-gray-300'>
                 <div className='rounded-2xl border border-gray-200 bg-white p-6 shadow-sm ring-1 ring-black/5 dark:border-gray-800 dark:bg-gray-900 dark:ring-white/10'>
                   <h2 className='mb-3 text-2xl font-bold text-primary-300'>
+                    {t('Who_We_Are')}
+                  </h2>
+                  <div className='text-base leading-7 md:text-lg md:leading-8 whitespace-pre-line'>
+                    {t('Who_We_Are_Description')}
+                  </div>
+                </div>
+
+                <div className='rounded-2xl border border-gray-200 bg-white p-6 shadow-sm ring-1 ring-black/5 dark:border-gray-800 dark:bg-gray-900 dark:ring-white/10'>
+                  <h2 className='mb-3 text-2xl font-bold text-primary-300'>
                     {t('Vision')}
                   </h2>
                   <p className='text-base leading-7 md:text-lg md:leading-8'>
