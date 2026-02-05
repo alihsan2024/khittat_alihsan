@@ -211,6 +211,173 @@ export const Footer = () => {
             </div>
           </div>
 
+          {/* Bank Details */}
+          <div
+            className={`mt-12 border-t pt-8 ${
+              isDark ? 'border-gray-800' : 'border-gray-200'
+            }`}
+          >
+            <h3
+              className={`mb-6 text-lg font-bold uppercase tracking-wide ${
+                isDark ? 'text-white' : 'text-gray-900'
+              }`}
+            >
+              {t('Bank_Details')}
+            </h3>
+            <div
+              className={`rounded-lg p-6 ${
+                isDark ? 'bg-gray-800' : 'bg-gray-50'
+              }`}
+            >
+              <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
+                <div>
+                  <p
+                    className={`mb-1 text-xs font-semibold uppercase ${
+                      isDark ? 'text-gray-400' : 'text-gray-500'
+                    }`}
+                  >
+                    {t('Bank_Details_Name')}
+                  </p>
+                  <p
+                    className={`text-sm ${
+                      isDark ? 'text-gray-300' : 'text-gray-700'
+                    }`}
+                  >
+                    {t('Bank_Details_Name_Value')}
+                  </p>
+                </div>
+                <div>
+                  <p
+                    className={`mb-1 text-xs font-semibold uppercase ${
+                      isDark ? 'text-gray-400' : 'text-gray-500'
+                    }`}
+                  >
+                    {t('Bank_Details_Bank_Name')}
+                  </p>
+                  <p
+                    className={`text-sm ${
+                      isDark ? 'text-gray-300' : 'text-gray-700'
+                    }`}
+                  >
+                    {t('Bank_Details_Bank_Name_Value')}
+                  </p>
+                </div>
+                <div>
+                  <p
+                    className={`mb-1 text-xs font-semibold uppercase ${
+                      isDark ? 'text-gray-400' : 'text-gray-500'
+                    }`}
+                  >
+                    {t('Bank_Details_Currency')}
+                  </p>
+                  <p
+                    className={`text-sm ${
+                      isDark ? 'text-gray-300' : 'text-gray-700'
+                    }`}
+                  >
+                    {t('Bank_Details_Currency_Value')}
+                  </p>
+                </div>
+                <div>
+                  <p
+                    className={`mb-1 text-xs font-semibold uppercase ${
+                      isDark ? 'text-gray-400' : 'text-gray-500'
+                    }`}
+                  >
+                    {t('Bank_Details_IBAN')}
+                  </p>
+                  <p
+                    className={`text-sm font-mono ${
+                      isDark ? 'text-gray-300' : 'text-gray-700'
+                    }`}
+                  >
+                    {t('Bank_Details_IBAN_Value')}
+                  </p>
+                </div>
+                <div>
+                  <p
+                    className={`mb-1 text-xs font-semibold uppercase ${
+                      isDark ? 'text-gray-400' : 'text-gray-500'
+                    }`}
+                  >
+                    {t('Bank_Details_Account_Type')}
+                  </p>
+                  <p
+                    className={`text-sm ${
+                      isDark ? 'text-gray-300' : 'text-gray-700'
+                    }`}
+                  >
+                    {t('Bank_Details_Account_Type_Value')}
+                  </p>
+                </div>
+                <div>
+                  <p
+                    className={`mb-1 text-xs font-semibold uppercase ${
+                      isDark ? 'text-gray-400' : 'text-gray-500'
+                    }`}
+                  >
+                    {t('Bank_Details_Account_Number')}
+                  </p>
+                  <p
+                    className={`text-sm font-mono ${
+                      isDark ? 'text-gray-300' : 'text-gray-700'
+                    }`}
+                  >
+                    {t('Bank_Details_Account_Number_Value')}
+                  </p>
+                </div>
+                <div>
+                  <p
+                    className={`mb-1 text-xs font-semibold uppercase ${
+                      isDark ? 'text-gray-400' : 'text-gray-500'
+                    }`}
+                  >
+                    {t('Bank_Details_Swift_Code')}
+                  </p>
+                  <p
+                    className={`text-sm font-mono ${
+                      isDark ? 'text-gray-300' : 'text-gray-700'
+                    }`}
+                  >
+                    {t('Bank_Details_Swift_Code_Value')}
+                  </p>
+                </div>
+                <div>
+                  <p
+                    className={`mb-1 text-xs font-semibold uppercase ${
+                      isDark ? 'text-gray-400' : 'text-gray-500'
+                    }`}
+                  >
+                    {t('Bank_Details_Bank_Address')}
+                  </p>
+                  <p
+                    className={`text-sm ${
+                      isDark ? 'text-gray-300' : 'text-gray-700'
+                    }`}
+                  >
+                    {t('Bank_Details_Bank_Address_Value')}
+                  </p>
+                </div>
+                <div>
+                  <p
+                    className={`mb-1 text-xs font-semibold uppercase ${
+                      isDark ? 'text-gray-400' : 'text-gray-500'
+                    }`}
+                  >
+                    {t('Bank_Details_Date')}
+                  </p>
+                  <p
+                    className={`text-sm ${
+                      isDark ? 'text-gray-300' : 'text-gray-700'
+                    }`}
+                  >
+                    {t('Bank_Details_Date_Value')}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div
             className={`mt-12 border-t pt-8 ${
               isDark ? 'border-gray-800' : 'border-gray-200'
