@@ -5,7 +5,7 @@ import { useRouter } from '@/src/navigation'
 import { supabase } from '@/lib/supabase'
 import Button from '../components/Button'
 import type { Project } from '@/lib/types/project'
-import { getAllProjectsClient } from '@/lib/queries/projects'
+import { getAllProjectsForAdmin } from '@/lib/queries/projects'
 
 function useAuthGuard() {
   const router = useRouter()
@@ -27,7 +27,7 @@ export default function AdminDashboardPage() {
   const refresh = async () => {
     setLoading(true)
     try {
-      const data = await getAllProjectsClient()
+      const data = await getAllProjectsForAdmin()
       setProjects(data)
     } finally {
       setLoading(false)
@@ -69,6 +69,7 @@ export default function AdminDashboardPage() {
                 <tr className='border-b border-gray-200 dark:border-gray-800'>
                   <th className='py-2 pr-4'>Title</th>
                   <th className='py-2 pr-4'>Slug</th>
+                  <th className='py-2 pr-4'>Active</th>
                   <th className='py-2 pr-4'>Image</th>
                   <th className='py-2 pr-4'>Updated</th>
                   <th className='py-2 pr-4'>Actions</th>
@@ -82,6 +83,13 @@ export default function AdminDashboardPage() {
                   >
                     <td className='py-2 pr-4'>{p.title}</td>
                     <td className='py-2 pr-4'>{p.slug}</td>
+                    <td className='py-2 pr-4'>
+                      <ActiveToggle
+                        projectId={p.id}
+                        active={p.active !== false}
+                        onDone={refresh}
+                      />
+                    </td>
                     <td className='py-2 pr-4'>
                       <a
                         href={p.image_url}
@@ -151,7 +159,8 @@ function ProjectEditor({ onSaved }: { onSaved: () => void }) {
         brief_description: brief,
         long_description: null,
         upsell_text: null,
-        prices: []
+        prices: [],
+        active: true
       }
       const { error } = await supabase.from('projects').insert(payload)
       if (error) throw error
@@ -238,6 +247,48 @@ function ProjectEditor({ onSaved }: { onSaved: () => void }) {
         </Button>
       </div>
     </div>
+  )
+}
+
+function ActiveToggle({
+  projectId,
+  active,
+  onDone
+}: {
+  projectId: string
+  active: boolean
+  onDone: () => void
+}) {
+  const [busy, setBusy] = useState(false)
+
+  const toggle = async () => {
+    setBusy(true)
+    try {
+      const { error } = await supabase
+        .from('projects')
+        .update({ active: !active })
+        .eq('id', projectId)
+      if (error) throw error
+      onDone()
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  return (
+    <button
+      type='button'
+      onClick={toggle}
+      disabled={busy}
+      className={`rounded-full px-2 py-0.5 text-xs font-medium ${
+        active
+          ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400'
+          : 'bg-gray-200 text-gray-600 dark:bg-gray-700 dark:text-gray-400'
+      }`}
+      title={active ? 'Active (click to hide from site)' : 'Inactive (click to show)'}
+    >
+      {busy ? '…' : active ? 'On' : 'Off'}
+    </button>
   )
 }
 

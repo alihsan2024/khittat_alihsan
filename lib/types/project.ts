@@ -14,6 +14,7 @@ export interface Project {
   long_description: string | null
   upsell_text: string | null
   prices: Price[]
+  active?: boolean
   created_at: string
   updated_at: string
 }

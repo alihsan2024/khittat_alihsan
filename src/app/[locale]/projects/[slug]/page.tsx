@@ -771,6 +771,378 @@ export default async function ProjectDetailPage({
     }
   }
 
+  // Orphan Sponsorship and Social Assistance Program Content
+  const orphanSponsorshipContent = {
+    en: {
+      intro: `Orphan Sponsorship and Social Assistance Program\n\nA humanitarian program designed to provide sustainable financial and social support to orphans and highly vulnerable families, ensuring dignity, protection, and basic living stability.\n\nThe program offers monthly sponsorship covering essential needs such as food, education, and healthcare, along with seasonal assistance, contributing to long-term family resilience and social stability.`,
+      programComponents: {
+        title: 'Program Components',
+        items: [
+          'Fixed monthly financial sponsorship.',
+          'Social and psychological follow-up.',
+          'Health support when needed (medications and medical tests).',
+          'Seasonal assistance (Eid support, winter aid, school supplies).'
+        ]
+      },
+      targetBeneficiaries: {
+        title: 'Target Beneficiaries',
+        content: `Orphans.\n\nPoor families without a breadwinner.\n\nEmergency humanitarian cases.`
+      },
+      callToAction: `Sponsor an orphan or vulnerable family today. Your monthly support provides food, education, healthcare, and dignity to those who need it most.\n\nEvery contribution helps build long-term resilience and social stability for the most vulnerable among us.`
+    },
+    ar: {
+      intro: `برنامج كفالة الأيتام والمساعدات الاجتماعية\n\nبرنامج إنساني يهدف إلى تقديم دعم مالي واجتماعي مستدام للأيتام والأسر ذات الاحتياج الشديد، لضمان الكرامة والحماية واستقرار الحياة الأساسية.\n\nيقدم البرنامج كفالة شهرية تغطي الاحتياجات الأساسية من غذاء وتعليم ورعاية صحية، إلى جانب المساعدات الموسمية، مما يساهم في صمود الأسرة واستقرارها الاجتماعي على المدى الطويل.`,
+      programComponents: {
+        title: 'مكونات البرنامج',
+        items: [
+          'كفالة مالية شهرية ثابتة.',
+          'متابعة اجتماعية ونفسية.',
+          'دعم صحي عند الحاجة (أدوية وفحوصات طبية).',
+          'مساعدات موسمية (دعم العيد، معونة الشتاء، مستلزمات مدرسية).'
+        ]
+      },
+      targetBeneficiaries: {
+        title: 'الفئات المستفيدة',
+        content: `الأيتام.\n\nالأسر الفقيرة دون معيل.\n\nحالات الطوارئ الإنسانية.`
+      },
+      callToAction: `اكفل يتيماً أو أسرة محتاجة اليوم. دعمك الشهري يوفر الغذاء والتعليم والرعاية الصحية والكرامة لمن هم في أمس الحاجة.\n\nكل تبرع يساهم في بناء الصمود والاستقرار الاجتماعي على المدى الطويل لأكثر الفئات ضعفاً.`
+    }
+  }
+
+  // Education and School Support Program Content
+  const educationProgramContent = {
+    en: {
+      intro: `Education and School Support Program\n\nThis program aims to ensure access to quality education for children from vulnerable households and to prevent school dropout caused by economic hardship.\n\nSupport includes partial or full coverage of school fees, provision of school supplies, and remedial education when needed, with continuous follow-up to ensure students' retention and academic progress.`,
+      programComponents: {
+        title: 'Program Components',
+        items: [
+          'Full or partial payment of school fees.',
+          'Distribution of school supplies and backpacks.',
+          'Remedial classes and educational support.',
+          'Academic follow-up for struggling students.'
+        ]
+      },
+      targetBeneficiaries: {
+        title: 'Target Beneficiaries',
+        content: `Students from low-income families.\n\nSchool-age orphans.`
+      },
+      callToAction: `Support a child's education today. Your donation helps cover school fees, supplies, and remedial support so that no child drops out due to economic hardship.`
+    },
+    ar: {
+      intro: `برنامج التعليم ودعم المدارس\n\nيهدف هذا البرنامج إلى ضمان حصول أطفال الأسر الضعيفة على تعليم ذي جودة ومنع التسرب المدرسي الناتج عن الظروف الاقتصادية الصعبة.\n\nيشمل الدعم تغطية جزئية أو كاملة للرسوم المدرسية، وتوفير المستلزمات المدرسية، والتعليم العلاجي عند الحاجة، مع متابعة مستمرة لضمان استمرار الطلاب وتقدمهم الدراسي.`,
+      programComponents: {
+        title: 'مكونات البرنامج',
+        items: [
+          'سداد كامل أو جزئي للرسوم المدرسية.',
+          'توزيع المستلزمات المدرسية والحقائب.',
+          'دروس تقوية ودعم تعليمي.',
+          'متابعة دراسية للطلاب المتعثرين.'
+        ]
+      },
+      targetBeneficiaries: {
+        title: 'الفئات المستفيدة',
+        content: `الطلاب من الأسر ذات الدخل المحدود.\n\nالأيتام في سن الدراسة.`
+      },
+      callToAction: `ادعم تعليم طفل اليوم. تبرعك يساعد في تغطية الرسوم المدرسية والمستلزمات والدعم العلاجي حتى لا يتسرب أي طفل بسبب الظروف الاقتصادية.`
+    }
+  }
+
+  // Food Security Program Content
+  const foodSecurityContent = {
+    en: {
+      intro: `Food Security Program\n\nA life-saving relief program that addresses food insecurity among the most vulnerable households through regular and emergency food assistance. The program operates a community kitchen that prepares and distributes hot meals, ensuring access to safe and nutritious food. It helps reduce hunger and malnutrition, prevents negative coping mechanisms, and strengthens household and community food resilience through organized food distribution.`,
+      programComponents: {
+        title: 'Program Components',
+        items: [
+          'Food parcels',
+          'Hot meals in specific cases',
+          'Emergency food interventions during crises'
+        ]
+      },
+      targetBeneficiaries: {
+        title: 'Target Beneficiaries',
+        content: `Poor families.\n\nElderly people.\n\nCritical medical and social cases.`
+      },
+      ramadanComponent: {
+        title: 'Ramadan Program Component',
+        content: `During the holy month of Ramadan, the program includes a dedicated component aimed at supporting the most vulnerable families and promoting social solidarity. The Ramadan program provides iftar meals for children and families in need, and enables the collection and distribution of fasting expiations (Kaffarah Al-Siyam) and Zakat Al-Fitr in the form of food parcels and hot meals. These meals are prepared and distributed through Khitat Al-Ihsan Community Kitchen, ensuring the provision of safe, nutritious food while preserving the dignity of beneficiaries and alleviating their economic burden during the holy month.`
+      },
+      callToAction: `Support the Food Security Program today. Your donation provides food parcels, hot meals, and emergency relief to the most vulnerable, and helps sustain our Ramadan iftar and Zakat Al-Fitr distribution.`
+    },
+    ar: {
+      intro: `برنامج الأمن الغذائي\n\nبرنامج إغاثة منقذ للحياة يعالج انعدام الأمن الغذائي لدى الأسر الأكثر ضعفاً من خلال المساعدات الغذائية المنتظمة والطارئة. يشغّل البرنامج مطبخاً مجتمعياً يُعدّ ويوزّع الوجبات الساخنة، مما يضمن الوصول إلى غذاء آمن ومغذٍ. يساعد في تقليل الجوع وسوء التغذية، ويمنع آليات التكيّف السلبية، ويعزز صمود الأسر والمجتمعات غذائياً من خلال التوزيع المنظم للغذاء.`,
+      programComponents: {
+        title: 'مكونات البرنامج',
+        items: [
+          'طرود غذائية',
+          'وجبات ساخنة في حالات محددة',
+          'تدخلات غذائية طارئة أثناء الأزمات'
+        ]
+      },
+      targetBeneficiaries: {
+        title: 'الفئات المستفيدة',
+        content: `الأسر الفقيرة.\n\nكبار السن.\n\nالحالات الطبية والاجتماعية الحرجة.`
+      },
+      ramadanComponent: {
+        title: 'مكون برنامج رمضان',
+        content: `خلال شهر رمضان المبارك، يتضمن البرنامج مكوناً مخصصاً يهدف إلى دعم الأسر الأكثر ضعفاً وتعزيز التضامن الاجتماعي. يوفر برنامج رمضان وجبات إفطار للأطفال والأسر المحتاجة، ويتيح جمع وتوزيع كفارات الصيام وزكاة الفطر في شكل طرود غذائية ووجبات ساخنة. تُعدّ هذه الوجبات وتُوزّع من خلال مطبخ خطط الإحسان المجتمعي، مما يضمن توفير غذاء آمن ومغذٍ مع الحفاظ على كرامة المستفيدين وتخفيف عبئهم الاقتصادي خلال الشهر الكريم.`
+      },
+      callToAction: `ادعم برنامج الأمن الغذائي اليوم. تبرعك يوفر طروداً غذائية ووجبات ساخنة وإغاثة طارئة للأكثر ضعفاً، ويساعد في استمرار إفطار رمضان وتوزيع زكاة الفطر.`
+    }
+  }
+
+  // Zakat Fund Program Content
+  const zakatFundContent = {
+    en: {
+      intro: `Zakat Fund Program\n\nA faith-based assistance program focused on the collection and transparent distribution of Zakat funds in accordance with Islamic principles to eligible beneficiaries.\n\nFunds are allocated based on needs assessments to support poor families and indebted households, contributing to basic needs coverage and community solidarity.`,
+      programComponents: {
+        title: 'Program Components',
+        items: [
+          'Collection of Zakat funds.',
+          'Assessment of eligible cases.',
+          'Distribution to eligible categories (poor, needy, indebted, etc.).',
+          'Transparent documentation of expenditures.'
+        ]
+      },
+      targetBeneficiaries: {
+        title: 'Target Beneficiaries',
+        content: `Poor and needy individuals.\n\nIndebted households.\n\nFamilies without a stable income.`
+      },
+      callToAction: `Give your Zakat through the Zakat Fund Program. Your contribution is distributed transparently to eligible beneficiaries in need.`
+    },
+    ar: {
+      intro: `برنامج صندوق الزكاة\n\nبرنامج مساعدة مستند إلى الإيمان يركز على جمع وتوزيع أموال الزكاة بشكل شفاف وفق المبادئ الإسلامية على المستفيدين المؤهلين.\n\nيتم تخصيص الأموال بناءً على تقييمات الاحتياجات لدعم الأسر الفقيرة والمثقلة بالديون، مما يساهم في تغطية الاحتياجات الأساسية والتضامن المجتمعي.`,
+      programComponents: {
+        title: 'مكونات البرنامج',
+        items: [
+          'جمع أموال الزكاة.',
+          'تقييم الحالات المؤهلة.',
+          'التوزيع على الفئات المؤهلة (فقراء، مساكين، غارمون، إلخ).',
+          'توثيق شفاف للمصروفات.'
+        ]
+      },
+      targetBeneficiaries: {
+        title: 'الفئات المستفيدة',
+        content: `الفقراء والمساكين.\n\nالأسر المثقلة بالديون.\n\nالعائلات دون دخل مستقر.`
+      },
+      callToAction: `أدِّ زكاتك من خلال برنامج صندوق الزكاة. يُوزَّع تبرعك بشفافية على المستفيدين المؤهلين المحتاجين.`
+    }
+  }
+
+  // Volunteer Engagement Program Content
+  const volunteerEngagementContent = {
+    en: {
+      intro: `Volunteer Engagement Program\n\nA community-based program that mobilizes and trains volunteers to support humanitarian and development activities, strengthening local capacity and community ownership.\n\nThe program promotes civic engagement, accountability, and a culture of solidarity, enhancing the effectiveness and reach of humanitarian interventions.`,
+      callToAction: `Join the Volunteer Engagement Program. Your time and skills strengthen our humanitarian work and build a culture of solidarity.`
+    },
+    ar: {
+      intro: `برنامج المشاركة التطوعية\n\nبرنامج مجتمعي يحشد المتطوعين ويدربهم لدعم الأنشطة الإنسانية والتنموية، وتعزيز القدرة المحلية وملكية المجتمع.\n\nيعزز البرنامج المشاركة المدنية والمساءلة وثقافة التضامن، ويزيد من فعالية ومدى التدخلات الإنسانية.`,
+      callToAction: `انضم إلى برنامج المشاركة التطوعية. وقتك ومهاراتك تعززان عملنا الإنساني وتبنيان ثقافة التضامن.`
+    }
+  }
+
+  // Eid Program Content
+  const eidProgramContent = {
+    en: {
+      intro: `Eid Program\n\nA seasonal program that aims to bring joy and happiness to orphans and vulnerable families during Eid through the distribution of sweets, toys, and new clothes.\n\nThe program supports children in need by providing essential Eid items and helps ensure that orphaned children can celebrate Eid with a sense of joy and dignity.`,
+      programComponents: {
+        title: 'Program Components',
+        items: [
+          'Distribution of Eid sweets.',
+          'Providing one toy for each child.',
+          'Supplying new clothes for Eid.',
+          'Occasional small cash assistance.'
+        ]
+      },
+      targetBeneficiaries: {
+        title: 'Target Beneficiaries',
+        content: `Orphaned children.\n\nPoor families.`
+      },
+      callToAction: `Support the Eid Program. Your donation brings joy to orphans and vulnerable children during Eid.`
+    },
+    ar: {
+      intro: `برنامج العيد\n\nبرنامج موسمي يهدف إلى إدخال الفرح والسعادة على الأيتام والأسر الضعيفة خلال العيد من خلال توزيع الحلويات والألعاب والملابس الجديدة.\n\nيدعم البرنامج الأطفال المحتاجين بتوفير مستلزمات العيد الأساسية ويساعد في ضمان أن يحتفل الأطفال الأيتام بالعيد بفرح وكرامة.`,
+      programComponents: {
+        title: 'مكونات البرنامج',
+        items: [
+          'توزيع حلويات العيد.',
+          'توفير لعبة واحدة لكل طفل.',
+          'توفير ملابس جديدة للعيد.',
+          'مساعدة نقدية صغيرة أحياناً.'
+        ]
+      },
+      targetBeneficiaries: {
+        title: 'الفئات المستفيدة',
+        content: `الأطفال الأيتام.\n\nالأسر الفقيرة.`
+      },
+      callToAction: `ادعم برنامج العيد. تبرعك يُدخل الفرح على الأيتام والأطفال المحتاجين خلال العيد.`
+    }
+  }
+
+  // In-Kind Donations Program Content
+  const inKindDonationsContent = {
+    en: {
+      intro: `In-Kind Donations Program\n\nA humanitarian program that focuses on receiving, managing, and distributing in-kind (non-cash) donations to support the most vulnerable families and individuals, helping meet their basic needs and improve living conditions.`,
+      targetBeneficiaries: {
+        title: 'Target Beneficiaries',
+        content: `Orphans.\n\nVulnerable and low-income families.\n\nEmergency and hardship cases.\n\nCommunities affected by crises or disasters.`
+      },
+      typesOfDonations: {
+        title: 'Types of Donations',
+        items: [
+          'Food items',
+          'New or gently used clothing, shoes',
+          'Blankets, hygiene kits',
+          'Medicines and school supplies',
+          'Basic household items',
+          'Other relief materials'
+        ]
+      },
+      callToAction: `Donate in kind today. Your non-cash donations help meet the basic needs of the most vulnerable.`
+    },
+    ar: {
+      intro: `برنامج التبرعات العينية\n\nبرنامج إنساني يركز على استلام وإدارة وتوزيع التبرعات العينية (غير النقدية) لدعم الأسر والأفراد الأكثر ضعفاً، ومساعدتهم على تلبية احتياجاتهم الأساسية وتحسين ظروف المعيشة.`,
+      targetBeneficiaries: {
+        title: 'الفئات المستفيدة',
+        content: `الأيتام.\n\nالأسر الضعيفة وذات الدخل المحدود.\n\nحالات الطوارئ والضيق.\n\nالمجتمعات المتضررة من الأزمات أو الكوارث.`
+      },
+      typesOfDonations: {
+        title: 'أنواع التبرعات',
+        items: [
+          'مواد غذائية',
+          'ملابس وأحذية جديدة أو مستعملة بحالة جيدة',
+          'بطانيات، مجموعات النظافة',
+          'أدوية ومستلزمات مدرسية',
+          'أدوات منزلية أساسية',
+          'مواد إغاثة أخرى'
+        ]
+      },
+      callToAction: `تبرع عينياً اليوم. تبرعاتك العينية تساعد في تلبية الاحتياجات الأساسية للأكثر ضعفاً.`
+    }
+  }
+
+  // Sadaka Jariya Program Content
+  const sadakaJariyaContent = {
+    en: {
+      intro: `Sadaka Jariya Program\n\nA humanitarian program that aims to create a lasting impact and continuous reward through charitable projects whose benefits continue over the long term. The program includes drilling water wells in poor areas to provide clean water, as well as contributing to the construction of mosques to serve needy communities and promote values of solidarity and giving. Sadaka Jariya is of great importance because its reward continues even after a person's lifetime, as long as people benefit from it. Through this program, donors leave a lasting legacy of goodness and ongoing benefit for individuals and communities, by the will of God.`,
+      callToAction: `Give Sadaka Jariya today. Support water wells and mosque construction for lasting reward and ongoing benefit.`
+    },
+    ar: {
+      intro: `برنامج الصدقة الجارية\n\nبرنامج إنساني يهدف إلى خلق أثر دائم وأجر متصل من خلال مشاريع خيرية تستمر منافعها على المدى الطويل. يشمل البرنامج حفر آبار المياه في المناطق الفقيرة لتوفير المياه النظيفة، فضلاً عن المساهمة في بناء المساجد لخدمة المجتمعات المحتاجة وتعزيز قيم التضامن والعطاء. للصدقة الجارية أهمية كبيرة لأن أجرها يستمر حتى بعد وفاة الشخص ما دام الناس يستفيدون منها. من خلال هذا البرنامج، يترك المتبرعون إرثاً خيرياً دائم المنفعة للأفراد والمجتمعات، بإذن الله.`,
+      callToAction: `تصدق بصدقة جارية اليوم. ادعم آبار المياه وبناء المساجد لأجر دائم ومنفعة مستمرة.`
+    }
+  }
+
+  // Youth Empowerment Program Content
+  const youthEmpowermentContent = {
+    en: {
+      intro: `Youth Empowerment Program\n\nThe Youth Empowerment Program at Khitat Al-Ihsan Association aims to support young men and women by strengthening their economic and social capacities. This is achieved through providing essential life and vocational skills, and by creating pathways to employment and initiative, thereby enhancing self-reliance, positive community integration, and reducing unemployment and social vulnerability.\n\nThe program focuses on transforming youth from beneficiaries in need of assistance into active contributors to community development, while upholding the humanitarian and social values adopted by the association.`,
+      targetBeneficiaries: {
+        title: 'Target Beneficiaries',
+        content: `Young men and women from poor or vulnerable households.\n\nUnemployed youth or those lacking access to stable income opportunities.\n\nYouth at risk of educational dropout or social exclusion.\n\nYoung people facing special social or economic challenges.`
+      },
+      callToAction: `Support the Youth Empowerment Program. Your donation helps young people gain skills and opportunities for a better future.`
+    },
+    ar: {
+      intro: `برنامج تمكين الشباب\n\nيهدف برنامج تمكين الشباب في جمعية خطط الإحسان إلى دعم الشابات والشباب من خلال تعزيز قدراتهم الاقتصادية والاجتماعية. يتم ذلك بتوفير المهارات الحياتية والمهنية الأساسية، وخلق مسارات للعمل والمبادرة، مما يعزز الاعتماد على الذات والاندماج المجتمعي الإيجابي ويقلل البطالة والضعف الاجتماعي.\n\nيركز البرنامج على تحويل الشباب من مستفيدين محتاجين للمساعدة إلى مساهمين فاعلين في التنمية المجتمعية، مع التمسك بالقيم الإنسانية والاجتماعية التي تتبناها الجمعية.`,
+      targetBeneficiaries: {
+        title: 'الفئات المستفيدة',
+        content: `الشابات والشباب من الأسر الفقيرة أو الضعيفة.\n\nالشباب العاطلون عن العمل أو المحرومون من فرص دخل مستقرة.\n\nالشباب المعرضون لخطر التسرب التعليمي أو الاستبعاد الاجتماعي.\n\nالشباب الذين يواجهون تحديات اجتماعية أو اقتصادية خاصة.`
+      },
+      callToAction: `ادعم برنامج تمكين الشباب. تبرعك يساعد الشباب في اكتساب المهارات والفرص لمستقبل أفضل.`
+    }
+  }
+
+  // Health and Medical Assistance Program Content (detailed)
+  const healthMedicalAssistanceContent = {
+    en: {
+      intro: `Health and Medical Assistance Program\n\nThe Health and Medical Assistance Program aims to support the most vulnerable groups (poor families, people with chronic illnesses, the elderly, persons with disabilities, and children) by providing essential and emergency health services. This helps reduce financial burdens and improves quality of life.`,
+      programComponents: {
+        title: 'Program Components',
+        items: [
+          'Medical Consultations: Doctor consultations (general medicine and specialists when needed), initial medical examinations and diagnosis.',
+          'Medication Support: Medicines for chronic diseases (hypertension, diabetes, heart disease, asthma) and for acute cases based on medical reports.',
+          'Laboratory Tests and Medical Imaging: Basic laboratory tests, X-rays, ultrasound, CT scans, or MRI when necessary and according to available resources.',
+          'Emergency Medical Support: Contribution to hospital admission costs for emergency cases, support for necessary surgical operations (within defined financial limits).'
+        ]
+      },
+      callToAction: `Support the Health and Medical Assistance Program. Your donation helps provide essential and emergency health care to the most vulnerable.`
+    },
+    ar: {
+      intro: `برنامج المساعدة الصحية والطبية\n\nيهدف برنامج المساعدة الصحية والطبية إلى دعم الفئات الأكثر ضعفاً (الأسر الفقيرة، المصابون بأمراض مزمنة، كبار السن، ذوو الإعاقة، والأطفال) من خلال توفير الخدمات الصحية الأساسية والطارئة. مما يساعد في تقليل الأعباء المالية ويحسن جودة الحياة.`,
+      programComponents: {
+        title: 'مكونات البرنامج',
+        items: [
+          'الاستشارات الطبية: استشارات الأطباء (طب عام ومتخصصون عند الحاجة)، الفحوصات والتشخيص الطبي الأولي.',
+          'دعم الأدوية: أدوية الأمراض المزمنة (ضغط، سكري، قلب، ربو) والحالات الحادة وفق التقارير الطبية.',
+          'التحاليل والتصوير الطبي: تحاليل مخبرية أساسية، أشعة، إيكو، CT أو رنين عند الحاجة وحسب الموارد المتاحة.',
+          'الدعم الطبي الطارئ: المساهمة في تكاليف دخول المستشفى للحالات الطارئة، دعم العمليات الجراحية الضرورية (ضمن حدود مالية محددة).'
+        ]
+      },
+      callToAction: `ادعم برنامج المساعدة الصحية والطبية. تبرعك يساعد في توفير الرعاية الصحية الأساسية والطارئة للأكثر ضعفاً.`
+    }
+  }
+
+  // Qurbani (Udhiya) Program Content
+  const qurbaniProgramContent = {
+    en: {
+      intro: `Qurbani (Udhiya) Program for Eid Al-Adha\n\nThe Qurbani Program for Eid Al-Adha aims to revive the ritual of sacrifice and promote the values of social solidarity by slaughtering sacrificial animals and distributing the meat to poor and needy families. This program helps bring joy to their homes and enables them to celebrate Eid with dignity.\n\nKhitat Al-Ihsan Association implements this program in full compliance with Islamic (Sharia) and health regulations, with complete transparency, ensuring that the meat reaches its rightful beneficiaries on time.`,
+      programObjectives: {
+        title: 'Program Objectives',
+        items: [
+          'Revive the Sunnah of Qurbani and strengthen social solidarity.',
+          'Support needy families during the Eid season.',
+          'Reduce living and financial burdens on the most vulnerable groups.',
+          "Enhance community and donor trust in the association's work."
+        ]
+      },
+      targetBeneficiaries: {
+        title: 'Target Beneficiaries',
+        content: `Poor and low-income families.\n\nWidows and orphans.\n\nElderly people without family support.\n\nPersons with disabilities.\n\nFamilies living in difficult humanitarian conditions.`
+      },
+      implementationMechanism: {
+        title: 'Implementation Mechanism and Slaughter Arrangement',
+        items: [
+          'Receiving Qurbani donations or their cash value from donors.',
+          'The association may arrange the slaughter of sheep on behalf of donors at approved slaughterhouses.',
+          'Full compliance with Islamic requirements of Qurbani (age, health, and proper timing).',
+          'Supervising slaughtering and meat cutting according to health standards.',
+          'Fair and organized distribution of meat to beneficiary families.',
+          'Documenting the process and preparing reports to ensure transparency.'
+        ]
+      },
+      callToAction: `Offer your Qurbani through Khitat Al-Ihsan. Your sacrifice reaches poor and needy families in full compliance with Sharia and health standards.`
+    },
+    ar: {
+      intro: `برنامج الأضحية (العيد)\n\nيهدف برنامج الأضحية لعيد الأضحى إلى إحياء سنة الذبح وتعزيز قيم التضامن الاجتماعي بذبح الأضاحي وتوزيع اللحم على الأسر الفقيرة والمحتاجة. يساعد هذا البرنامج في إدخال الفرح إلى بيوتهم وتمكينهم من الاحتفال بالعيد بكرامة.\n\nتنفذ جمعية خطط الإحسان هذا البرنامج وفقاً كاملاً للضوابط الإسلامية (الشرعية) والصحية، وبشفافية تامة، ضماناً لوصول اللحم إلى مستحقيه في الوقت المحدد.`,
+      programObjectives: {
+        title: 'أهداف البرنامج',
+        items: [
+          'إحياء سنة الأضحية وتعزيز التضامن الاجتماعي.',
+          'دعم الأسر المحتاجة خلال موسم العيد.',
+          'تقليل الأعباء المعيشية والمالية على الفئات الأكثر ضعفاً.',
+          'تعزيز ثقة المجتمع والمتبرعين في عمل الجمعية.'
+        ]
+      },
+      targetBeneficiaries: {
+        title: 'الفئات المستفيدة',
+        content: `الأسر الفقيرة وذات الدخل المحدود.\n\nالأرامل والأيتام.\n\nكبار السن دون دعم عائلي.\n\nذوو الإعاقة.\n\nالأسر التي تعيش في ظروف إنسانية صعبة.`
+      },
+      implementationMechanism: {
+        title: 'آلية التنفيذ وترتيب الذبح',
+        items: [
+          'استلام تبرعات الأضحية أو قيمتها النقدية من المتبرعين.',
+          'قد ترتب الجمعية ذبح الأغنام نيابة عن المتبرعين في مجازر معتمدة.',
+          'الالتزام الكامل بمتطلبات الأضحية الإسلامية (العمر، الصحة، والتوقيت المناسب).',
+          'الإشراف على الذبح وتقطيع اللحم وفق المعايير الصحية.',
+          'توزيع عادل ومنظم للحم على الأسر المستفيدة.',
+          'توثيق العملية وإعداد التقارير لضمان الشفافية.'
+        ]
+      },
+      callToAction: `قدّم أضحيتك عبر جمعية خطط الإحسان. تصل أضحيتك إلى الأسر الفقيرة والمحتاجة وفقاً كاملاً للضوابط الشرعية والصحية.`
+    }
+  }
+
   // Determine which content to use based on project slug
   const isGiftOfSight = slug === 'gift-of-sight'
   const isHealthMedical = slug === 'health-medical'
@@ -780,6 +1152,17 @@ export default async function ProjectDetailPage({
   const isWaterWells = slug === 'water-well'
   const isSadaqahSacrifice = slug === 'sadaqah-sacrifice'
   const isAqeeqah = slug === 'aqeeqah'
+  const isOrphanSponsorship = slug === 'orphan-sponsorship'
+  const isEducationProgram = slug === 'education-program'
+  const isFoodSecurity = slug === 'food-security'
+  const isZakatFund = slug === 'zakat-fund'
+  const isVolunteerEngagement = slug === 'volunteer-engagement'
+  const isEidProgram = slug === 'eid-program'
+  const isInKindDonations = slug === 'in-kind-donations'
+  const isSadakaJariya = slug === 'sadaka-jariya'
+  const isYouthEmpowerment = slug === 'youth-empowerment'
+  const isHealthMedicalAssistance = slug === 'health-medical-assistance'
+  const isQurbani = slug === 'qurbani'
   const content = isGiftOfSight
     ? isArabic
       ? giftOfSightContent.ar
@@ -812,9 +1195,53 @@ export default async function ProjectDetailPage({
                   ? isArabic
                     ? aqeeqahContent.ar
                     : aqeeqahContent.en
-                  : isArabic
-                    ? zakatContent.ar
-                    : zakatContent.en
+                  : isOrphanSponsorship
+                    ? isArabic
+                      ? orphanSponsorshipContent.ar
+                      : orphanSponsorshipContent.en
+                    : isEducationProgram
+                      ? isArabic
+                        ? educationProgramContent.ar
+                        : educationProgramContent.en
+                      : isFoodSecurity
+                        ? isArabic
+                          ? foodSecurityContent.ar
+                          : foodSecurityContent.en
+                        : isZakatFund
+                          ? isArabic
+                            ? zakatFundContent.ar
+                            : zakatFundContent.en
+                          : isVolunteerEngagement
+                            ? isArabic
+                              ? volunteerEngagementContent.ar
+                              : volunteerEngagementContent.en
+                            : isEidProgram
+                              ? isArabic
+                                ? eidProgramContent.ar
+                                : eidProgramContent.en
+                              : isInKindDonations
+                                ? isArabic
+                                  ? inKindDonationsContent.ar
+                                  : inKindDonationsContent.en
+                                : isSadakaJariya
+                                  ? isArabic
+                                    ? sadakaJariyaContent.ar
+                                    : sadakaJariyaContent.en
+                                  : isYouthEmpowerment
+                                    ? isArabic
+                                      ? youthEmpowermentContent.ar
+                                      : youthEmpowermentContent.en
+                                    : isHealthMedicalAssistance
+                                      ? isArabic
+                                        ? healthMedicalAssistanceContent.ar
+                                        : healthMedicalAssistanceContent.en
+                                      : isQurbani
+                                        ? isArabic
+                                          ? qurbaniProgramContent.ar
+                                          : qurbaniProgramContent.en
+                                        : isArabic
+                                          ? zakatContent.ar
+                                          : zakatContent.en
 
   return (
     <div className='flex min-h-screen flex-col bg-white dark:bg-gray-900'>
@@ -855,7 +1282,18 @@ export default async function ProjectDetailPage({
                   isLCK ||
                   isWaterWells ||
                   isSadaqahSacrifice ||
-                  isAqeeqah) &&
+                  isAqeeqah ||
+                  isOrphanSponsorship ||
+                  isEducationProgram ||
+                  isFoodSecurity ||
+                  isZakatFund ||
+                  isVolunteerEngagement ||
+                  isEidProgram ||
+                  isInKindDonations ||
+                  isSadakaJariya ||
+                  isYouthEmpowerment ||
+                  isHealthMedicalAssistance ||
+                  isQurbani) &&
                 'intro' in content ? (
                   <div className='space-y-3 text-base leading-7 text-gray-700 dark:text-gray-300'>
                     {(content as any).intro
@@ -1419,6 +1857,120 @@ export default async function ProjectDetailPage({
                 </div>
               )}
 
+              {/* Program Components (Orphan Sponsorship) */}
+              {'programComponents' in content &&
+                (content as any).programComponents && (
+                  <div>
+                    <h3 className='mb-4 text-2xl font-bold text-gray-900 dark:text-white'>
+                      {(content as any).programComponents.title}
+                    </h3>
+                    <ul className='space-y-2 text-base leading-7 text-gray-700 dark:text-gray-300'>
+                      {(content as any).programComponents.items.map(
+                        (item: string, idx: number) => (
+                          <li key={idx} className='flex items-start'>
+                            <span className='mr-2 text-primary-300'>•</span>
+                            <span>{item}</span>
+                          </li>
+                        )
+                      )}
+                    </ul>
+                  </div>
+                )}
+
+              {/* Target Beneficiaries (Orphan Sponsorship) */}
+              {'targetBeneficiaries' in content &&
+                (content as any).targetBeneficiaries && (
+                  <div>
+                    <h3 className='mb-4 text-2xl font-bold text-gray-900 dark:text-white'>
+                      {(content as any).targetBeneficiaries.title}
+                    </h3>
+                    <div className='space-y-3 text-base leading-7 text-gray-700 dark:text-gray-300'>
+                      {(content as any).targetBeneficiaries.content
+                        .split('\n\n')
+                        .map((para: string, idx: number) => (
+                          <p key={idx}>{para}</p>
+                        ))}
+                    </div>
+                  </div>
+                )}
+
+              {/* Ramadan Program Component (Food Security) */}
+              {'ramadanComponent' in content &&
+                (content as any).ramadanComponent && (
+                  <div>
+                    <h3 className='mb-4 text-2xl font-bold text-gray-900 dark:text-white'>
+                      {(content as any).ramadanComponent.title}
+                    </h3>
+                    <div className='space-y-3 text-base leading-7 text-gray-700 dark:text-gray-300'>
+                      {(content as any).ramadanComponent.content
+                        .split('\n\n')
+                        .map((para: string, idx: number) => (
+                          <p key={idx}>{para}</p>
+                        ))}
+                    </div>
+                  </div>
+                )}
+
+              {/* Program Objectives (Qurbani etc.) */}
+              {'programObjectives' in content &&
+                (content as any).programObjectives && (
+                  <div>
+                    <h3 className='mb-4 text-2xl font-bold text-gray-900 dark:text-white'>
+                      {(content as any).programObjectives.title}
+                    </h3>
+                    <ul className='space-y-2 text-base leading-7 text-gray-700 dark:text-gray-300'>
+                      {(content as any).programObjectives.items.map(
+                        (item: string, idx: number) => (
+                          <li key={idx} className='flex items-start'>
+                            <span className='mr-2 text-primary-300'>•</span>
+                            <span>{item}</span>
+                          </li>
+                        )
+                      )}
+                    </ul>
+                  </div>
+                )}
+
+              {/* Types of Donations (In-Kind) */}
+              {'typesOfDonations' in content &&
+                (content as any).typesOfDonations && (
+                  <div>
+                    <h3 className='mb-4 text-2xl font-bold text-gray-900 dark:text-white'>
+                      {(content as any).typesOfDonations.title}
+                    </h3>
+                    <ul className='space-y-2 text-base leading-7 text-gray-700 dark:text-gray-300'>
+                      {(content as any).typesOfDonations.items.map(
+                        (item: string, idx: number) => (
+                          <li key={idx} className='flex items-start'>
+                            <span className='mr-2 text-primary-300'>•</span>
+                            <span>{item}</span>
+                          </li>
+                        )
+                      )}
+                    </ul>
+                  </div>
+                )}
+
+              {/* Implementation Mechanism (Qurbani) */}
+              {'implementationMechanism' in content &&
+                (content as any).implementationMechanism && (
+                  <div>
+                    <h3 className='mb-4 text-2xl font-bold text-gray-900 dark:text-white'>
+                      {(content as any).implementationMechanism.title}
+                    </h3>
+                    <ul className='space-y-2 text-base leading-7 text-gray-700 dark:text-gray-300'>
+                      {(content as any).implementationMechanism.items.map(
+                        (item: string, idx: number) => (
+                          <li key={idx} className='flex items-start'>
+                            <span className='mr-2 text-primary-300'>•</span>
+                            <span>{item}</span>
+                          </li>
+                        )
+                      )}
+                    </ul>
+                  </div>
+                )}
+
               {/* Reality / Bitter Reality (Water Wells) */}
               {'reality' in content && (content as any).reality ? (
                 <div>
@@ -1972,224 +2524,45 @@ export default async function ProjectDetailPage({
                 )}
             </div>
 
-            {/* Right Column - Prices/Donation Amounts */}
+            {/* Right Column - Prices/Donation Amounts (all projects: 50, 100, 150, 200 USD) */}
             <DonationSidebar
-              project={
-                isWaterWells
-                  ? {
-                      id: project.id,
-                      slug: project.slug,
-                      title: displayTitle,
-                      image_url: project.image_url,
-                      brief_description: displayBrief,
-                      long_description: project.long_description,
-                      upsell_text: project.upsell_text,
-                      created_at: project.created_at,
-                      updated_at: project.updated_at,
-                      prices: [
-                        {
-                          amount: 358,
-                          currency: 'USD',
-                          label: isArabic ? 'بئر سطحي' : 'Shallow Well',
-                          description: isArabic ? 'سريلانكا' : 'Sri Lanka'
-                        },
-                        {
-                          amount: 1040,
-                          currency: 'USD',
-                          label: isArabic
-                            ? 'بئر عميق بمضخة يدوية'
-                            : 'Deep Well (Hand Pump)',
-                          description: isArabic ? 'أوغندا' : 'Uganda'
-                        },
-                        {
-                          amount: 1040,
-                          currency: 'USD',
-                          label: isArabic
-                            ? 'بئر كهربائي'
-                            : 'Deep Electric Well',
-                          description: isArabic ? 'إندونيسيا' : 'Indonesia'
-                        },
-                        {
-                          amount: 1755,
-                          currency: 'USD',
-                          label: isArabic
-                            ? 'بئر مع محطة مياه'
-                            : 'Deep Well + Station',
-                          description: isArabic
-                            ? 'مجهز بمحطة وضوء'
-                            : 'With Wudu Station'
-                        }
-                      ] satisfies Price[]
-                    }
-                  : isSadaqahSacrifice
-                    ? {
-                        id: project.id,
-                        slug: project.slug,
-                        title: displayTitle,
-                        image_url: project.image_url,
-                        brief_description: displayBrief,
-                        long_description: project.long_description,
-                        upsell_text: project.upsell_text,
-                        created_at: project.created_at,
-                        updated_at: project.updated_at,
-                        prices: [
-                          {
-                            amount: 88,
-                            currency: 'USD',
-                            label: isArabic ? 'ذبيحة ماعز' : 'Goat Sacrifice',
-                            description: isArabic
-                              ? 'أوغندا وبنغلاديش'
-                              : 'Uganda & Bangladesh'
-                          },
-                          {
-                            amount: 95,
-                            currency: 'USD',
-                            label: isArabic ? 'ذبيحة خروف' : 'Sheep Sacrifice',
-                            description: isArabic ? 'أوغندا' : 'Uganda'
-                          }
-                        ] satisfies Price[]
-                      }
-                    : isAqeeqah
-                      ? {
-                          id: project.id,
-                          slug: project.slug,
-                          title: displayTitle,
-                          image_url: project.image_url,
-                          brief_description: displayBrief,
-                          long_description: project.long_description,
-                          upsell_text: project.upsell_text,
-                          created_at: project.created_at,
-                          updated_at: project.updated_at,
-                          prices: [
-                            {
-                              amount: 88,
-                              currency: 'USD',
-                              label: isArabic ? 'ذبيحة ماعز' : 'Goat Sacrifice',
-                              description: isArabic
-                                ? 'أوغندا وبنغلاديش'
-                                : 'Uganda & Bangladesh'
-                            },
-                            {
-                              amount: 95,
-                              currency: 'USD',
-                              label: isArabic
-                                ? 'ذبيحة خروف'
-                                : 'Sheep Sacrifice',
-                              description: isArabic ? 'أوغندا' : 'Uganda'
-                            }
-                          ] satisfies Price[]
-                        }
-                      : isGiftOfSight
-                        ? {
-                            id: project.id,
-                            slug: project.slug,
-                            title: displayTitle,
-                            image_url: project.image_url,
-                            brief_description: displayBrief,
-                            long_description: project.long_description,
-                            upsell_text: project.upsell_text,
-                            created_at: project.created_at,
-                            updated_at: project.updated_at,
-                            prices: [
-                              {
-                                amount: 75,
-                                currency: 'USD',
-                                label: isArabic
-                                  ? 'عملية واحدة'
-                                  : 'One Cataract Surgery',
-                                description: isArabic
-                                  ? 'إعادة البصر لشخص واحد'
-                                  : 'Restore sight for one person'
-                              },
-                              {
-                                amount: 150,
-                                currency: 'USD',
-                                label: isArabic
-                                  ? 'عمليتان'
-                                  : 'Two Cataract Surgeries',
-                                description: isArabic
-                                  ? 'إعادة البصر لشخصين'
-                                  : 'Restore sight for two people'
-                              },
-                              {
-                                amount: 225,
-                                currency: 'USD',
-                                label: isArabic
-                                  ? 'ثلاث عمليات'
-                                  : 'Three Cataract Surgeries',
-                                description: isArabic
-                                  ? 'إعادة البصر لثلاثة أشخاص'
-                                  : 'Restore sight for three people'
-                              },
-                              {
-                                amount: 300,
-                                currency: 'USD',
-                                label: isArabic
-                                  ? 'أربع عمليات'
-                                  : 'Four Cataract Surgeries',
-                                description: isArabic
-                                  ? 'إعادة البصر لأربعة أشخاص'
-                                  : 'Restore sight for four people'
-                              }
-                            ] satisfies Price[]
-                          }
-                        : isGazaEmergency
-                          ? {
-                              id: project.id,
-                              slug: project.slug,
-                              title: displayTitle,
-                              image_url: project.image_url,
-                              brief_description: displayBrief,
-                              long_description: project.long_description,
-                              upsell_text: project.upsell_text,
-                              created_at: project.created_at,
-                              updated_at: project.updated_at,
-                              prices: [
-                                {
-                                  amount: 20,
-                                  currency: 'USD',
-                                  label: isArabic
-                                    ? '10 أرغفة خبز'
-                                    : '10 Loaves of Bread',
-                                  description: isArabic
-                                    ? 'خبز طازج يُخبز ويُوزع'
-                                    : 'Fresh bread baked and delivered'
-                                },
-                                {
-                                  amount: 36,
-                                  currency: 'USD',
-                                  label: isArabic
-                                    ? '5 وجبات ساخنة'
-                                    : '5 Hot Meals',
-                                  description: isArabic
-                                    ? 'من مطابخنا المجتمعية'
-                                    : 'From our community kitchens'
-                                },
-                                {
-                                  amount: 250,
-                                  currency: 'USD',
-                                  label: isArabic
-                                    ? 'شاحنة مياه 1000 لتر'
-                                    : '1,000L Water Truck',
-                                  description: isArabic
-                                    ? 'توفير مياه نظيفة'
-                                    : 'Supplying clean water'
-                                }
-                              ] satisfies Price[]
-                            }
-                          : {
-                              id: project.id,
-                              slug: project.slug,
-                              title: displayTitle,
-                              image_url: project.image_url,
-                              brief_description: displayBrief,
-                              long_description: project.long_description,
-                              upsell_text: project.upsell_text,
-                              created_at: project.created_at,
-                              updated_at: project.updated_at,
-                              prices: project.prices
-                            }
-              }
+              project={{
+                id: project.id,
+                slug: project.slug,
+                title: displayTitle,
+                image_url: project.image_url,
+                brief_description: displayBrief,
+                long_description: project.long_description,
+                upsell_text: project.upsell_text,
+                created_at: project.created_at,
+                updated_at: project.updated_at,
+                prices: [
+                  {
+                    amount: 50,
+                    currency: 'USD',
+                    label: isArabic ? 'تبرع 50 دولار' : 'Donate $50',
+                    description: ''
+                  },
+                  {
+                    amount: 100,
+                    currency: 'USD',
+                    label: isArabic ? 'تبرع 100 دولار' : 'Donate $100',
+                    description: ''
+                  },
+                  {
+                    amount: 150,
+                    currency: 'USD',
+                    label: isArabic ? 'تبرع 150 دولار' : 'Donate $150',
+                    description: ''
+                  },
+                  {
+                    amount: 200,
+                    currency: 'USD',
+                    label: isArabic ? 'تبرع 200 دولار' : 'Donate $200',
+                    description: ''
+                  }
+                ] satisfies Price[]
+              }}
               isArabic={isArabic}
             />
           </div>
