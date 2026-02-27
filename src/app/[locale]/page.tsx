@@ -196,6 +196,42 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* Orphan Child Sponsorship Featured */}
+      <section className='relative overflow-hidden bg-gray-50 py-16 dark:bg-gray-900'>
+        <div className='mx-auto max-w-screen-2xl px-4 md:px-6 lg:px-8'>
+          <div className='grid gap-8 lg:grid-cols-12 lg:items-center lg:gap-12'>
+            <div className='lg:col-span-5'>
+              <div className='relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl ring-1 ring-black/5 dark:ring-white/10'>
+                <Image
+                  src='https://edtqeahcijnyzultlcbc.supabase.co/storage/v1/object/public/banners/banners/1772174147112-txdc4bumhif.jpeg'
+                  alt={t('Orphan_Sponsorship_Title')}
+                  fill
+                  className='object-cover'
+                  sizes='(max-width: 1024px) 100vw, 50vw'
+                />
+              </div>
+            </div>
+            <div className='lg:col-span-7'>
+              <h2 className='mb-4 text-3xl font-bold text-primary-300 dark:text-white md:text-4xl'>
+                {t('Orphan_Sponsorship_Title')}
+              </h2>
+              <p className='mb-6 text-base leading-7 text-gray-600 dark:text-gray-300 md:text-lg'>
+                {t('Orphan_Sponsorship_Description')}
+              </p>
+              <LinkButton
+                href='/orphan-child-sponsorship'
+                variant='primary'
+                size='medium'
+                className='inline-flex items-center gap-2'
+              >
+                {t('Orphan_Sponsorship_CTA')}
+                <FiArrowRight className='h-4 w-4' />
+              </LinkButton>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Current Projects */}
       <section className='bg-gray-50 py-16 dark:bg-gray-900'>
         <div className='mx-auto max-w-screen-2xl px-4 md:px-6 lg:px-8'>

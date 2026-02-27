@@ -12,6 +12,7 @@ export const pathnames = {
   '/about': '/about',
   '/projects': '/projects',
   '/projects/[slug]': '/projects/[slug]',
+  '/orphan-child-sponsorship': '/orphan-child-sponsorship',
   '/contact': '/contact',
   '/faq': '/faq',
   '/admin': '/admin',

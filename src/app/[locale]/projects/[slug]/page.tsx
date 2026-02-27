@@ -2524,7 +2524,7 @@ export default async function ProjectDetailPage({
                 )}
             </div>
 
-            {/* Right Column - Prices/Donation Amounts (all projects: 50, 100, 150, 200 USD) */}
+            {/* Right Column - Prices/Donation Amounts (orphan-sponsorship from $80, others from $50) */}
             <DonationSidebar
               project={{
                 id: project.id,
@@ -2536,32 +2536,60 @@ export default async function ProjectDetailPage({
                 upsell_text: project.upsell_text,
                 created_at: project.created_at,
                 updated_at: project.updated_at,
-                prices: [
-                  {
-                    amount: 50,
-                    currency: 'USD',
-                    label: isArabic ? 'تبرع 50 دولار' : 'Donate $50',
-                    description: ''
-                  },
-                  {
-                    amount: 100,
-                    currency: 'USD',
-                    label: isArabic ? 'تبرع 100 دولار' : 'Donate $100',
-                    description: ''
-                  },
-                  {
-                    amount: 150,
-                    currency: 'USD',
-                    label: isArabic ? 'تبرع 150 دولار' : 'Donate $150',
-                    description: ''
-                  },
-                  {
-                    amount: 200,
-                    currency: 'USD',
-                    label: isArabic ? 'تبرع 200 دولار' : 'Donate $200',
-                    description: ''
-                  }
-                ] satisfies Price[]
+                prices: (isOrphanSponsorship
+                  ? [
+                      {
+                        amount: 80,
+                        currency: 'USD',
+                        label: isArabic ? 'تبرع 80 دولار' : 'Donate $80',
+                        description: isArabic ? 'الحد الأدنى للكفالة الشهرية لطفل واحد' : 'Minimum monthly sponsorship per child'
+                      },
+                      {
+                        amount: 100,
+                        currency: 'USD',
+                        label: isArabic ? 'تبرع 100 دولار' : 'Donate $100',
+                        description: ''
+                      },
+                      {
+                        amount: 150,
+                        currency: 'USD',
+                        label: isArabic ? 'تبرع 150 دولار' : 'Donate $150',
+                        description: ''
+                      },
+                      {
+                        amount: 200,
+                        currency: 'USD',
+                        label: isArabic ? 'تبرع 200 دولار' : 'Donate $200',
+                        description: ''
+                      }
+                    ]
+                  : [
+                      {
+                        amount: 50,
+                        currency: 'USD',
+                        label: isArabic ? 'تبرع 50 دولار' : 'Donate $50',
+                        description: ''
+                      },
+                      {
+                        amount: 100,
+                        currency: 'USD',
+                        label: isArabic ? 'تبرع 100 دولار' : 'Donate $100',
+                        description: ''
+                      },
+                      {
+                        amount: 150,
+                        currency: 'USD',
+                        label: isArabic ? 'تبرع 150 دولار' : 'Donate $150',
+                        description: ''
+                      },
+                      {
+                        amount: 200,
+                        currency: 'USD',
+                        label: isArabic ? 'تبرع 200 دولار' : 'Donate $200',
+                        description: ''
+                      }
+                    ]
+                ) satisfies Price[]
               }}
               isArabic={isArabic}
             />

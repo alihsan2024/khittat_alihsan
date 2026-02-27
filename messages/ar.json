@@ -64,5 +64,8 @@
   "Bank_Details_Bank_Address": "عنوان البنك",
   "Bank_Details_Bank_Address_Value": "FRANSABANK -TRIPOLI-GEMMAYZAT",
   "Bank_Details_Date": "التاريخ",
-  "Bank_Details_Date_Value": "طرابلس في 30/01/2026"
+  "Bank_Details_Date_Value": "طرابلس في 30/01/2026",
+  "Orphan_Sponsorship_Title": "كفالة الطفل اليتيم",
+  "Orphan_Sponsorship_Description": "نُبقي الطفل اليتيم في أسرته ونرعاه في بيئته الطبيعية. الكفالة المالية تساعد الأم على الإبقاء على طفلها في رعايتها. اعرف المزيد عن كيفية كفالة يتيم.",
+  "Orphan_Sponsorship_CTA": "اعرف المزيد"
 }

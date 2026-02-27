@@ -65,5 +65,8 @@
   "Bank_Details_Bank_Address": "Bank Address",
   "Bank_Details_Bank_Address_Value": "FRANSABANK -TRIPOLI-GEMMAYZAT",
   "Bank_Details_Date": "Date",
-  "Bank_Details_Date_Value": "Tripoli on 30/01/2026"
+  "Bank_Details_Date_Value": "Tripoli on 30/01/2026",
+  "Orphan_Sponsorship_Title": "Orphan Child Sponsorship",
+  "Orphan_Sponsorship_Description": "We keep the orphaned child within their family and care for them in their natural environment. Financial sponsorship helps the mother keep her child under her care. Learn more about how you can sponsor an orphan.",
+  "Orphan_Sponsorship_CTA": "Learn More"
 }
