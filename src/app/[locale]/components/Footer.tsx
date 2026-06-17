@@ -179,14 +179,14 @@ export const Footer = () => {
                     />
                   </div>
                   <a
-                    href='mailto:khitattalihsan@gmail.com'
+                    href='mailto:info@khittatalihsan.org.lb'
                     className={`text-sm underline-offset-2 transition-all hover:underline ${
                       isDark
                         ? 'text-gray-300 hover:text-white'
                         : 'text-gray-700 hover:text-primary-500'
                     }`}
                   >
-                    khitattalihsan@gmail.com
+                    info@khittatalihsan.org.lb
                   </a>
                 </div>
               </div>

@@ -81,10 +81,10 @@ export default async function ContactPage() {
               </h3>
             </div>
             <a
-              href='mailto:khitattalihsan@gmail.com'
+              href='mailto:info@khittatalihsan.org.lb'
               className='text-gray-700 transition-colors hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400'
             >
-              khitattalihsan@gmail.com
+              info@khittatalihsan.org.lb
             </a>
           </div>
 
