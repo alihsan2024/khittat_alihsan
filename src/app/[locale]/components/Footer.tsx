@@ -3,7 +3,7 @@ import { Link } from '@/src/navigation'
 import { useTranslations } from 'next-intl'
 import { useTheme } from 'next-themes'
 import Image from 'next/image'
-import { FiMail, FiMapPin, FiClock } from 'react-icons/fi'
+import { FiMail, FiMapPin, FiClock, FiPhone } from 'react-icons/fi'
 
 export const Footer = () => {
   const t = useTranslations('')
@@ -59,15 +59,15 @@ export const Footer = () => {
                   isDark ? 'text-gray-300' : 'text-gray-700'
                 }`}
               >
-                {t('Registered_Name')}: Khitat Al-Ihsan Charity Social
-                Association
+                {t('Registered_Name')}: Khittat Al Ihsan Charitable
+                Organization
               </p>
               <p
                 className={`text-sm ${
                   isDark ? 'text-gray-300' : 'text-gray-700'
                 }`}
               >
-                {t('NGO_Registration_Number')}: 50
+                {t('Registration_Number')}: 50/2018
               </p>
             </div>
 
@@ -187,6 +187,29 @@ export const Footer = () => {
                     }`}
                   >
                     info@khittatalihsan.org.lb
+                  </a>
+                </div>
+                <div className='flex items-start gap-3'>
+                  <div
+                    className={`rounded-lg p-2 transition-colors ${
+                      isDark ? 'bg-gray-800' : 'bg-gray-100'
+                    }`}
+                  >
+                    <FiPhone
+                      className={`h-5 w-5 ${
+                        isDark ? 'text-primary-400' : 'text-primary-500'
+                      }`}
+                    />
+                  </div>
+                  <a
+                    href='tel:+9616210607'
+                    className={`text-sm underline-offset-2 transition-all hover:underline ${
+                      isDark
+                        ? 'text-gray-300 hover:text-white'
+                        : 'text-gray-700 hover:text-primary-500'
+                    }`}
+                  >
+                    {t('Phone_Value')}
                   </a>
                 </div>
               </div>

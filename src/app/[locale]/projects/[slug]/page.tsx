@@ -27,7 +27,7 @@ export async function generateMetadata({
 
     const title = isArabic
       ? `${displayTitle} | جمعية خطط الإحسان الخيرية`
-      : `${displayTitle} | Khitat Al-Ihsan Charity`
+      : `${displayTitle} | Khittat Al Ihsan Charitable Organization`
 
     return {
       title,
@@ -188,7 +188,7 @@ export default async function ProjectDetailPage({
       },
       whyCalculator: {
         title:
-          "Why Use Khitat Al-Ihsan Charity Association's Zakat Calculator?",
+          "Why Use Khittat Al Ihsan Charitable Organization's Zakat Calculator?",
         items: [
           'Simple & Fast: User-friendly, mobile-ready',
           'Customisable: Add debts, investments, gold, and more',
@@ -198,8 +198,8 @@ export default async function ProjectDetailPage({
         ]
       },
       whyChoose: {
-        title: 'Why Choose Khitat Al-Ihsan Charity Association?',
-        content: `At Khitat Al-Ihsan Charity Association, we treat your Zakat as an amanah (trust).\n\nThat means:\n\nShariah-compliant processes\n\nClear reporting and project tracking\n\nGlobal reach, local impact\n\nSupervised by trusted scholars\n\nZakat is kept separate from other funds\n\nYou give with sincerity. We deliver with Ihsan (excellence).`
+        title: 'Why Choose Khittat Al Ihsan Charitable Organization?',
+        content: `At Khittat Al Ihsan Charitable Organization, we treat your Zakat as an amanah (trust).\n\nThat means:\n\nShariah-compliant processes\n\nClear reporting and project tracking\n\nGlobal reach, local impact\n\nSupervised by trusted scholars\n\nZakat is kept separate from other funds\n\nYou give with sincerity. We deliver with Ihsan (excellence).`
       },
       importance: {
         title: 'Why Is Zakat al-Maal So Important?',
@@ -207,7 +207,7 @@ export default async function ProjectDetailPage({
       },
       impact: {
         title: 'Real-World Impact of Your Zakat',
-        content: `When you give your Zakat through Khitat Al-Ihsan Charity Association, it reaches the hearts that need it most. You give:\n\nA widow the means to feed her children with dignity\n\nAn elderly person the independence they deserve\n\nA refugee family the safety and privacy of a home\n\nAn orphan the opportunity to learn, grow, and dream\n\nAn entire village access to clean, life-saving water\n\nEvery dollar is used with intention, turning your 2.5% into food, medicine, shelter, and hope. It's more than aid. Its dignity restored.`
+        content: `When you give your Zakat through Khittat Al Ihsan Charitable Organization, it reaches the hearts that need it most. You give:\n\nA widow the means to feed her children with dignity\n\nAn elderly person the independence they deserve\n\nA refugee family the safety and privacy of a home\n\nAn orphan the opportunity to learn, grow, and dream\n\nAn entire village access to clean, life-saving water\n\nEvery dollar is used with intention, turning your 2.5% into food, medicine, shelter, and hope. It's more than aid. Its dignity restored.`
       },
       mercy: {
         title: 'The Mercy in Zakat',
@@ -326,7 +326,7 @@ export default async function ProjectDetailPage({
       },
       whatDonation: {
         title: 'What Your Donation Provides',
-        content: `Through Khitat Al-Ihsan Charity Association's Health & Medical Appeal, we work with trusted partners to deliver life-changing aid where it is needed most.\n\nYour generosity provides:\n\nMobility Aids: wheelchairs, crutches, walkers\n\nEssential Medicine: treatment for chronic conditions\n\nSpecialised Care: equipment for those living with disability\n\nBasic Needs: food aid and financial assistance for vulnerable families\n\nAccess to Healthcare: helping families reach ongoing medical support\n\nEvery wheelchair donated, every prescription filled, every aid delivered is relief and dignity restored.`
+        content: `Through Khittat Al Ihsan Charitable Organization's Health & Medical Appeal, we work with trusted partners to deliver life-changing aid where it is needed most.\n\nYour generosity provides:\n\nMobility Aids: wheelchairs, crutches, walkers\n\nEssential Medicine: treatment for chronic conditions\n\nSpecialised Care: equipment for those living with disability\n\nBasic Needs: food aid and financial assistance for vulnerable families\n\nAccess to Healthcare: helping families reach ongoing medical support\n\nEvery wheelchair donated, every prescription filled, every aid delivered is relief and dignity restored.`
       },
       whyMatters: {
         title: 'Why This Appeal Matters Now',
@@ -345,7 +345,7 @@ export default async function ProjectDetailPage({
         content: `Your donation can provide:\n\nA wheelchair for someone confined to bed\n\nEssential medicine for those who cannot afford treatment\n\nFood aid for families facing both illness and poverty\n\nEvery contribution counts. Whether you give once or set up monthly support, your generosity provides lasting relief.`
       },
       whyChoose: {
-        title: 'Why Choose Khitat Al-Ihsan Charity Social Association?',
+        title: 'Why Choose Khittat Al Ihsan Charitable Organization?',
         content: `We treat your donation as an amanah (trust). That means:\n\nShariah-compliant processes\n\nTransparent reporting and accountability\n\nGlobal reach with local partners\n\nLife-changing aid delivered with dignity\n\nTogether, we have provided thousands of families with mobility aids, medical support, and essential care, but the need is growing every day.`
       },
       legacy: {
@@ -365,7 +365,7 @@ export default async function ProjectDetailPage({
       },
       whatDonation: {
         title: 'ما الذي يوفّره تبرعك؟',
-        content: `من خلال حملة الصحة والدعم الطبي لجمعية خطط الإحسان الخيرية الاجتماعية، نعمل مع شركاء موثوقين لتقديم مساعدات تغيّر حياة الناس حيث الحاجة أشد.\n\nتبرعك السخي يوفّر:\n\nأجهزة مساعدة على الحركة: كراسي متحركة، عكازات، أدوات مساعدة\n\nأدوية أساسية: لعلاج الحالات المزمنة\n\nرعاية متخصصة: أجهزة خاصة لمن يعيشون مع إعاقة\n\nاحتياجات أساسية: مساعدات غذائية ودعم مالي للأسر الضعيفة\n\nالوصول إلى الرعاية الصحية: مساعدة العائلات على الحصول على علاج مستمر\n\nكل كرسي متحرك يُقدّم، كل وصفة دواء تُصرف، كل مساعدة تُسلّم ليست مجرد دعم — بل كرامة تُستعاد.`
+        content: `من خلال حملة الصحة والدعم الطبي لجمعية خطط الإحسان الخيرية، نعمل مع شركاء موثوقين لتقديم مساعدات تغيّر حياة الناس حيث الحاجة أشد.\n\nتبرعك السخي يوفّر:\n\nأجهزة مساعدة على الحركة: كراسي متحركة، عكازات، أدوات مساعدة\n\nأدوية أساسية: لعلاج الحالات المزمنة\n\nرعاية متخصصة: أجهزة خاصة لمن يعيشون مع إعاقة\n\nاحتياجات أساسية: مساعدات غذائية ودعم مالي للأسر الضعيفة\n\nالوصول إلى الرعاية الصحية: مساعدة العائلات على الحصول على علاج مستمر\n\nكل كرسي متحرك يُقدّم، كل وصفة دواء تُصرف، كل مساعدة تُسلّم ليست مجرد دعم — بل كرامة تُستعاد.`
       },
       whyMatters: {
         title: 'لماذا تهم هذه الحملة الآن؟',
@@ -384,7 +384,7 @@ export default async function ProjectDetailPage({
         content: `تبرعك يمكن أن يوفّر:\n\nكرسي متحرك واحد لمن حُصر في السرير\n\nدواء أساسي لمن لا يستطيع تحمّل تكاليف العلاج\n\nمساعدات غذائية للأسر التي تواجه المرض والفقر معًا\n\nكل مساهمة تحدث فرقًا. سواء تبرعت مرة واحدة أو دعمت شهريًا، فإن سخاءك يوفّر راحة دائمة.`
       },
       whyChoose: {
-        title: 'لماذا تختار جمعية خطط الإحسان الخيرية الاجتماعية؟',
+        title: 'لماذا تختار جمعية خطط الإحسان الخيرية؟',
         content: `نحن نتعامل مع تبرعك كأمانة. وهذا يعني:\n\nعمليات متوافقة مع الشريعة\n\nتقارير شفافة ومحاسبة واضحة\n\nوصول عالمي من خلال شركاء محليين\n\nمساعدات تغيّر حياة الناس وتُقدّم بكرامة\n\nمعًا، قدّمنا آلاف الكراسي المتحركة، والدعم الطبي، والرعاية الأساسية للأسر، لكن الحاجة تزداد يومًا بعد يوم.`
       },
       legacy: {
@@ -417,7 +417,7 @@ export default async function ProjectDetailPage({
       },
       beTheReason: {
         title: 'Be the Reason Someone Gets to Eat',
-        content: `Just one meal can mean the world to a hungry child, and just one donation can help a struggling family survive.\n\nKhitat Al-Ihsan Charity Association is committed to feeding the needy globally. With your help, we provide meals, staples, and essential support to the most vulnerable.\n\nYou Can Make a Difference\n\nWhen you give, you're not just donating, you're providing hope, dignity, and relief.\n\nYour support means everything. Help end hunger today.`
+        content: `Just one meal can mean the world to a hungry child, and just one donation can help a struggling family survive.\n\nKhittat Al Ihsan Charitable Organization is committed to feeding the needy globally. With your help, we provide meals, staples, and essential support to the most vulnerable.\n\nYou Can Make a Difference\n\nWhen you give, you're not just donating, you're providing hope, dignity, and relief.\n\nYour support means everything. Help end hunger today.`
       }
     },
     ar: {
@@ -448,14 +448,14 @@ export default async function ProjectDetailPage({
   // Gaza Emergency Project Content
   const gazaEmergencyContent = {
     en: {
-      intro: `Gaza is living through one of the worst man-made humanitarian crises of our time. Relentless bombardment has destroyed homes, hospitals, schools, and farmland. Families who have already lost everything are being pushed into smaller and smaller corners of the strip, squeezed into overcrowded shelters with no food, no water, and no dignity.\n\nThe UN has confirmed famine in Gaza. Hunger is no longer a risk — it is a deadly reality. Children are starving, hospitals are collapsing without medicine or fuel, and more than 1.9 million people have been forcibly displaced multiple times.\n\nAmid this devastation, Khitat Al-Ihsan Charity Social Association is still delivering life-saving aid. Your donation today provides bread, hot meals, clean water, shelter, and emergency relief directly to families in Gaza.\n\nThe Prophet ﷺ said: "Whoever relieves a believer's hardship, Allah will relieve his hardship on the Day of Judgment." - Sahih Muslim`,
+      intro: `Gaza is living through one of the worst man-made humanitarian crises of our time. Relentless bombardment has destroyed homes, hospitals, schools, and farmland. Families who have already lost everything are being pushed into smaller and smaller corners of the strip, squeezed into overcrowded shelters with no food, no water, and no dignity.\n\nThe UN has confirmed famine in Gaza. Hunger is no longer a risk — it is a deadly reality. Children are starving, hospitals are collapsing without medicine or fuel, and more than 1.9 million people have been forcibly displaced multiple times.\n\nAmid this devastation, Khittat Al Ihsan Charitable Organization is still delivering life-saving aid. Your donation today provides bread, hot meals, clean water, shelter, and emergency relief directly to families in Gaza.\n\nThe Prophet ﷺ said: "Whoever relieves a believer's hardship, Allah will relieve his hardship on the Day of Judgment." - Sahih Muslim`,
       whatsHappening: {
         title: "What's Happening in Gaza",
         content: `According to OCHA and the World Health Organisation (WHO):\n\nAlmost every home in Gaza is damaged or destroyed\n\n88% of schools have been wiped out\n\nHalf of hospitals are bombed or shut down\n\n68% of farmland and vital road networks are gone\n\nMore than 1.9 million people are displaced, many sleeping in the open\n\nThis is Gaza today. Entire neighbourhoods reduced to rubble. Families pushed from north to south with nowhere safe to go. Mothers unable to feed their children. Children too weak to walk.`
       },
       howWeDeliver: {
         title: 'How We Deliver Aid in Gaza',
-        content: `Khitat Al-Ihsan Charity Social Association works with trusted local partners inside Gaza. These are people who have been serving their communities for years. They know the terrain, work under fire, and deliver aid with dignity and accountability.\n\nHere's how your donations reach families despite blockades and bombardment:\n\nRapid response: funds are kept ready for immediate purchase of food and water inside Gaza\n\nLocal sourcing: aid is procured directly in Gaza where possible, bypassing blocked borders\n\nCommunity embedded: our partners live among the people they serve, ensuring aid reaches the most vulnerable\n\nAccountability: distributions are GPS-tagged, photographed, and reported back\n\nThis is not aid promised. This is aid delivered.`
+        content: `Khittat Al Ihsan Charitable Organization works with trusted local partners inside Gaza. These are people who have been serving their communities for years. They know the terrain, work under fire, and deliver aid with dignity and accountability.\n\nHere's how your donations reach families despite blockades and bombardment:\n\nRapid response: funds are kept ready for immediate purchase of food and water inside Gaza\n\nLocal sourcing: aid is procured directly in Gaza where possible, bypassing blocked borders\n\nCommunity embedded: our partners live among the people they serve, ensuring aid reaches the most vulnerable\n\nAccountability: distributions are GPS-tagged, photographed, and reported back\n\nThis is not aid promised. This is aid delivered.`
       },
       whatDonationSupports: {
         title: 'What Your Donation Supports',
@@ -471,14 +471,14 @@ export default async function ProjectDetailPage({
       }
     },
     ar: {
-      intro: `غزة تعيش واحدة من أسوأ الأزمات الإنسانية من صنع الإنسان في عصرنا. القصف المتواصل دمّر البيوت والمستشفيات والمدارس والأراضي الزراعية. العائلات التي فقدت كل شيء تُدفع إلى زوايا أصغر فأصغر من القطاع، محشورة في ملاجئ مكتظة بلا طعام، بلا ماء، وبلا كرامة.\n\nالأمم المتحدة أكدت وقوع المجاعة في غزة. الجوع لم يعد خطرًا — بل أصبح واقعًا مميتًا. الأطفال يتضورون جوعًا، المستشفيات تنهار بلا دواء أو وقود، وأكثر من 1.9 مليون شخص نزحوا قسريًا عدة مرات.\n\nوسط هذا الدمار، تواصل جمعية خطط الإحسان الخيرية الاجتماعية تقديم المساعدات المنقذة للحياة. تبرعك اليوم يوفّر الخبز، الوجبات الساخنة، المياه النظيفة، المأوى، والإغاثة الطارئة مباشرة للعائلات في غزة.\n\nقال النبي ﷺ:\n"مَن نفَّسَ عن مؤمن كُربةً من كُرَبِ الدنيا، نفَّسَ الله عنه كُربةً من كُرَبِ يوم القيامة."\n– صحيح مسلم`,
+      intro: `غزة تعيش واحدة من أسوأ الأزمات الإنسانية من صنع الإنسان في عصرنا. القصف المتواصل دمّر البيوت والمستشفيات والمدارس والأراضي الزراعية. العائلات التي فقدت كل شيء تُدفع إلى زوايا أصغر فأصغر من القطاع، محشورة في ملاجئ مكتظة بلا طعام، بلا ماء، وبلا كرامة.\n\nالأمم المتحدة أكدت وقوع المجاعة في غزة. الجوع لم يعد خطرًا — بل أصبح واقعًا مميتًا. الأطفال يتضورون جوعًا، المستشفيات تنهار بلا دواء أو وقود، وأكثر من 1.9 مليون شخص نزحوا قسريًا عدة مرات.\n\nوسط هذا الدمار، تواصل جمعية خطط الإحسان الخيرية تقديم المساعدات المنقذة للحياة. تبرعك اليوم يوفّر الخبز، الوجبات الساخنة، المياه النظيفة، المأوى، والإغاثة الطارئة مباشرة للعائلات في غزة.\n\nقال النبي ﷺ:\n"مَن نفَّسَ عن مؤمن كُربةً من كُرَبِ الدنيا، نفَّسَ الله عنه كُربةً من كُرَبِ يوم القيامة."\n– صحيح مسلم`,
       whatsHappening: {
         title: 'ما الذي يحدث في غزة؟',
         content: `وفقًا لمكتب الأمم المتحدة لتنسيق الشؤون الإنسانية (OCHA) ومنظمة الصحة العالمية (WHO):\n\nتقريبًا كل بيت في غزة تضرر أو دُمِّر\n\n88% من المدارس دُمِّرت بالكامل\n\nنصف المستشفيات تم قصفها أو إغلاقها\n\n68% من الأراضي الزراعية وشبكات الطرق الحيوية زالت\n\nأكثر من 1.9 مليون شخص مشرّدون، وكثير منهم ينامون في العراء\n\nهذه هي غزة اليوم. أحياء كاملة تحوّلت إلى أنقاض. عائلات دُفعت من الشمال إلى الجنوب دون مكان آمن. أمهات غير قادرات على إطعام أطفالهن. أطفال ضعفاء لدرجة لا يستطيعون معها المشي.`
       },
       howWeDeliver: {
         title: 'كيف نوصّل المساعدات داخل غزة؟',
-        content: `تعمل جمعية خطط الإحسان الخيرية الاجتماعية مع شركاء محليين موثوقين داخل غزة. هؤلاء أناس يخدمون مجتمعاتهم منذ سنوات، يعرفون الأرض، يعملون تحت القصف، ويوصلون المساعدات بكرامة ومصداقية.\n\nهكذا تصل تبرعاتكم رغم الحصار والقصف:\n\nاستجابة سريعة: الأموال جاهزة لشراء الطعام والماء فورًا داخل غزة\n\nتأمين محلي: يتم شراء المساعدات مباشرة من داخل غزة حيثما أمكن، لتجاوز المعابر المغلقة\n\nتَوَغُّل مجتمعي: شركاؤنا يعيشون بين الناس الذين يخدمونهم، لضمان وصول المساعدات للأكثر ضعفًا\n\nالمساءلة: التوزيعات موثّقة بالصور، محددة المواقع GPS، ويُرفع تقرير عنها\n\nهذه ليست وعودًا بالمساعدة. هذه مساعدة تصل فعليًا.`
+        content: `تعمل جمعية خطط الإحسان الخيرية مع شركاء محليين موثوقين داخل غزة. هؤلاء أناس يخدمون مجتمعاتهم منذ سنوات، يعرفون الأرض، يعملون تحت القصف، ويوصلون المساعدات بكرامة ومصداقية.\n\nهكذا تصل تبرعاتكم رغم الحصار والقصف:\n\nاستجابة سريعة: الأموال جاهزة لشراء الطعام والماء فورًا داخل غزة\n\nتأمين محلي: يتم شراء المساعدات مباشرة من داخل غزة حيثما أمكن، لتجاوز المعابر المغلقة\n\nتَوَغُّل مجتمعي: شركاؤنا يعيشون بين الناس الذين يخدمونهم، لضمان وصول المساعدات للأكثر ضعفًا\n\nالمساءلة: التوزيعات موثّقة بالصور، محددة المواقع GPS، ويُرفع تقرير عنها\n\nهذه ليست وعودًا بالمساعدة. هذه مساعدة تصل فعليًا.`
       },
       whatDonationSupports: {
         title: 'ماذا يدعم تبرعك؟',
@@ -583,7 +583,7 @@ export default async function ProjectDetailPage({
       },
       whereWeBuild: {
         title: 'Where We Build Water Wells',
-        content: `At Khitat Al-Ihsan Charity Association, your generosity brings safe water to families across three countries:\n\nSri Lanka – Shallow Water Wells: Built in rural villages where families rely on rivers.\n\nUganda – Deep Hand-Pumped Water Wells: A reliable source of clean water for villages where children walk hours to fetch unsafe water. 1,000 liter water tank + wudu station\n\nIndonesia – Deep Electric Water Wells with Wudu Stations: Equipped with taps and a 1,000-litre tank, serving families, schools and Masajid for drinking and ablution.\n\nEach well is built to last, bringing relief, dignity, and a legacy of Sadaqah Jariyah to those who give.`
+        content: `At Khittat Al Ihsan Charitable Organization, your generosity brings safe water to families across three countries:\n\nSri Lanka – Shallow Water Wells: Built in rural villages where families rely on rivers.\n\nUganda – Deep Hand-Pumped Water Wells: A reliable source of clean water for villages where children walk hours to fetch unsafe water. 1,000 liter water tank + wudu station\n\nIndonesia – Deep Electric Water Wells with Wudu Stations: Equipped with taps and a 1,000-litre tank, serving families, schools and Masajid for drinking and ablution.\n\nEach well is built to last, bringing relief, dignity, and a legacy of Sadaqah Jariyah to those who give.`
       },
       cost: {
         title: 'How Much Does a Water Well Cost?',
@@ -610,7 +610,7 @@ export default async function ProjectDetailPage({
       },
       whereWeBuild: {
         title: 'أين نبني آبار المياه: سريلانكا، أوغندا، إندونيسيا',
-        content: `من خلال جمعية خطط الإحسان، تصل تبرعاتكم إلى ثلاث دول أساسية:\n\nسريلانكا – بئر سطحي ($358 USD): يوفر مياه الشرب الآمنة للقرى الريفية.\n\nأوغندا – بئر عميق بمضخة يدوية ($1040 USD): مصدر دائم وآمن للمياه للأسر التي كانت تعتمد على الأنهار الملوثة.\n\nإندونيسيا – بئر عميق كهربائي مع محطة وضوء ($1040+ USD): مجهز بخزان 1000 لتر وصنابير، يخدم العائلات والمساجد للشرب والوضوء.`
+        content: `من خلال جمعية خطط الإحسان الخيرية، تصل تبرعاتكم إلى ثلاث دول أساسية:\n\nسريلانكا – بئر سطحي ($358 USD): يوفر مياه الشرب الآمنة للقرى الريفية.\n\nأوغندا – بئر عميق بمضخة يدوية ($1040 USD): مصدر دائم وآمن للمياه للأسر التي كانت تعتمد على الأنهار الملوثة.\n\nإندونيسيا – بئر عميق كهربائي مع محطة وضوء ($1040+ USD): مجهز بخزان 1000 لتر وصنابير، يخدم العائلات والمساجد للشرب والوضوء.`
       },
       cost: {
         title: 'تكلفة حفر الآبار',
@@ -633,7 +633,7 @@ export default async function ProjectDetailPage({
       intro: `Thank Allah ﷻ through Sadaqah Sacrifice while feeding families in need. Goat $88, Sheep $95, Waleemah $80.`,
       whatIsSadaqah: {
         title: 'What is Sadaqah Sacrifice?',
-        content: `Sadaqah Sacrifice is one of the most heartfelt ways to thank Allah ﷻ for His countless blessings. This sacrifice is voluntary. It is done out of gratitude, whether after a safe journey, recovering from illness, moving into a new home, or simply reflecting on Allah's generosity in your life.\n\nAt Khitat Al-Ihsan Charity Social Association, we arrange your Sadaqah Sacrifice in Bangladesh, Uganda, and Lebanon. Families who rarely have the chance to eat meat will share in your offering, making your gratitude a source of nourishment and joy for those in hardship.`
+        content: `Sadaqah Sacrifice is one of the most heartfelt ways to thank Allah ﷻ for His countless blessings. This sacrifice is voluntary. It is done out of gratitude, whether after a safe journey, recovering from illness, moving into a new home, or simply reflecting on Allah's generosity in your life.\n\nAt Khittat Al Ihsan Charitable Organization, we arrange your Sadaqah Sacrifice in Bangladesh, Uganda, and Lebanon. Families who rarely have the chance to eat meat will share in your offering, making your gratitude a source of nourishment and joy for those in hardship.`
       },
       whyPerform: {
         title: 'Why do Muslims Perform Sadaqah Sacrifice?',
@@ -665,7 +665,7 @@ export default async function ProjectDetailPage({
       intro: `اشكروا الله ﷻ من خلال ذبيحة الصدقة، وأطعموا بها الأسر المحتاجة. الماعز 88 دولارًا، الخروف 95 دولارًا، الوليمة 80 دولارًا.`,
       whatIsSadaqah: {
         title: 'ما هي ذبيحة الصدقة؟',
-        content: `ذبيحة الصدقة من أصدق وسائل شكر الله ﷻ على نعمه التي لا تُحصى. وهي ذبيحة تطوعية، ليست واجبة، يقوم بها المسلم تعبيرًا عن الامتنان؛ بعد سفرٍ آمن، أو شفاءٍ من مرض، أو الانتقال إلى منزل جديد، أو حتى عند التأمل في فضل الله وكرمه.\n\nفي جمعية خطط الإحسان الخيرية الاجتماعية، نقوم بترتيب ذبائح الصدقة في بنغلاديش وأوغندا ولبنان. لتصل لحوم الأضاحي إلى الأسر التي نادرًا ما تتذوق اللحم، فيتحول شكركم إلى غذاءٍ وفرحٍ لمن يعيشون في ضيق.`
+        content: `ذبيحة الصدقة من أصدق وسائل شكر الله ﷻ على نعمه التي لا تُحصى. وهي ذبيحة تطوعية، ليست واجبة، يقوم بها المسلم تعبيرًا عن الامتنان؛ بعد سفرٍ آمن، أو شفاءٍ من مرض، أو الانتقال إلى منزل جديد، أو حتى عند التأمل في فضل الله وكرمه.\n\nفي جمعية خطط الإحسان الخيرية، نقوم بترتيب ذبائح الصدقة في بنغلاديش وأوغندا ولبنان. لتصل لحوم الأضاحي إلى الأسر التي نادرًا ما تتذوق اللحم، فيتحول شكركم إلى غذاءٍ وفرحٍ لمن يعيشون في ضيق.`
       },
       whyPerform: {
         title: 'لماذا يؤدي المسلمون ذبيحة الصدقة؟',
@@ -699,7 +699,7 @@ export default async function ProjectDetailPage({
   const aqeeqahContent = {
     en: {
       intro:
-        'At Khitat Al-Ihsan Charity Social Association, we arrange your Aqeeqah and ensure the meat reaches families facing poverty and food insecurity.\n\nCelebrating new life with gratitude, worship, and community care.',
+        'At Khittat Al Ihsan Charitable Organization, we arrange your Aqeeqah and ensure the meat reaches families facing poverty and food insecurity.\n\nCelebrating new life with gratitude, worship, and community care.',
       whatIs: {
         title: 'What Is Aqeeqah?',
         content:
@@ -735,7 +735,7 @@ export default async function ProjectDetailPage({
     },
     ar: {
       intro:
-        'في جمعية خطة الإحسان الخيرية الاجتماعية، نقوم بترتيب ذبح العقيقة والتأكد من وصول اللحوم إلى العائلات الفقيرة والمحتاجة للأمن الغذائي.\nنحتفل بالحياة الجديدة بالشكر والعبادة ورعاية المجتمع.',
+        'في جمعية خطط الإحسان الخيرية، نقوم بترتيب ذبح العقيقة والتأكد من وصول اللحوم إلى العائلات الفقيرة والمحتاجة للأمن الغذائي.\nنحتفل بالحياة الجديدة بالشكر والعبادة ورعاية المجتمع.',
       whatIs: {
         title: 'ما هي العقيقة؟',
         content:
@@ -865,7 +865,7 @@ export default async function ProjectDetailPage({
       },
       ramadanComponent: {
         title: 'Ramadan Program Component',
-        content: `During the holy month of Ramadan, the program includes a dedicated component aimed at supporting the most vulnerable families and promoting social solidarity. The Ramadan program provides iftar meals for children and families in need, and enables the collection and distribution of fasting expiations (Kaffarah Al-Siyam) and Zakat Al-Fitr in the form of food parcels and hot meals. These meals are prepared and distributed through Khitat Al-Ihsan Community Kitchen, ensuring the provision of safe, nutritious food while preserving the dignity of beneficiaries and alleviating their economic burden during the holy month.`
+        content: `During the holy month of Ramadan, the program includes a dedicated component aimed at supporting the most vulnerable families and promoting social solidarity. The Ramadan program provides iftar meals for children and families in need, and enables the collection and distribution of fasting expiations (Kaffarah Al-Siyam) and Zakat Al-Fitr in the form of food parcels and hot meals. These meals are prepared and distributed through Khittat Al Ihsan Community Kitchen, ensuring the provision of safe, nutritious food while preserving the dignity of beneficiaries and alleviating their economic burden during the holy month.`
       },
       callToAction: `Support the Food Security Program today. Your donation provides food parcels, hot meals, and emergency relief to the most vulnerable, and helps sustain our Ramadan iftar and Zakat Al-Fitr distribution.`
     },
@@ -1036,7 +1036,7 @@ export default async function ProjectDetailPage({
   // Youth Empowerment Program Content
   const youthEmpowermentContent = {
     en: {
-      intro: `Youth Empowerment Program\n\nThe Youth Empowerment Program at Khitat Al-Ihsan Association aims to support young men and women by strengthening their economic and social capacities. This is achieved through providing essential life and vocational skills, and by creating pathways to employment and initiative, thereby enhancing self-reliance, positive community integration, and reducing unemployment and social vulnerability.\n\nThe program focuses on transforming youth from beneficiaries in need of assistance into active contributors to community development, while upholding the humanitarian and social values adopted by the association.`,
+      intro: `Youth Empowerment Program\n\nThe Youth Empowerment Program at Khittat Al Ihsan Charitable Organization aims to support young men and women by strengthening their economic and social capacities. This is achieved through providing essential life and vocational skills, and by creating pathways to employment and initiative, thereby enhancing self-reliance, positive community integration, and reducing unemployment and social vulnerability.\n\nThe program focuses on transforming youth from beneficiaries in need of assistance into active contributors to community development, while upholding the humanitarian and social values adopted by the association.`,
       targetBeneficiaries: {
         title: 'Target Beneficiaries',
         content: `Young men and women from poor or vulnerable households.\n\nUnemployed youth or those lacking access to stable income opportunities.\n\nYouth at risk of educational dropout or social exclusion.\n\nYoung people facing special social or economic challenges.`
@@ -1044,7 +1044,7 @@ export default async function ProjectDetailPage({
       callToAction: `Support the Youth Empowerment Program. Your donation helps young people gain skills and opportunities for a better future.`
     },
     ar: {
-      intro: `برنامج تمكين الشباب\n\nيهدف برنامج تمكين الشباب في جمعية خطط الإحسان إلى دعم الشابات والشباب من خلال تعزيز قدراتهم الاقتصادية والاجتماعية. يتم ذلك بتوفير المهارات الحياتية والمهنية الأساسية، وخلق مسارات للعمل والمبادرة، مما يعزز الاعتماد على الذات والاندماج المجتمعي الإيجابي ويقلل البطالة والضعف الاجتماعي.\n\nيركز البرنامج على تحويل الشباب من مستفيدين محتاجين للمساعدة إلى مساهمين فاعلين في التنمية المجتمعية، مع التمسك بالقيم الإنسانية والاجتماعية التي تتبناها الجمعية.`,
+      intro: `برنامج تمكين الشباب\n\nيهدف برنامج تمكين الشباب في جمعية خطط الإحسان الخيرية إلى دعم الشابات والشباب من خلال تعزيز قدراتهم الاقتصادية والاجتماعية. يتم ذلك بتوفير المهارات الحياتية والمهنية الأساسية، وخلق مسارات للعمل والمبادرة، مما يعزز الاعتماد على الذات والاندماج المجتمعي الإيجابي ويقلل البطالة والضعف الاجتماعي.\n\nيركز البرنامج على تحويل الشباب من مستفيدين محتاجين للمساعدة إلى مساهمين فاعلين في التنمية المجتمعية، مع التمسك بالقيم الإنسانية والاجتماعية التي تتبناها الجمعية.`,
       targetBeneficiaries: {
         title: 'الفئات المستفيدة',
         content: `الشابات والشباب من الأسر الفقيرة أو الضعيفة.\n\nالشباب العاطلون عن العمل أو المحرومون من فرص دخل مستقرة.\n\nالشباب المعرضون لخطر التسرب التعليمي أو الاستبعاد الاجتماعي.\n\nالشباب الذين يواجهون تحديات اجتماعية أو اقتصادية خاصة.`
@@ -1086,7 +1086,7 @@ export default async function ProjectDetailPage({
   // Qurbani (Udhiya) Program Content
   const qurbaniProgramContent = {
     en: {
-      intro: `Qurbani (Udhiya) Program for Eid Al-Adha\n\nThe Qurbani Program for Eid Al-Adha aims to revive the ritual of sacrifice and promote the values of social solidarity by slaughtering sacrificial animals and distributing the meat to poor and needy families. This program helps bring joy to their homes and enables them to celebrate Eid with dignity.\n\nKhitat Al-Ihsan Association implements this program in full compliance with Islamic (Sharia) and health regulations, with complete transparency, ensuring that the meat reaches its rightful beneficiaries on time.`,
+      intro: `Qurbani (Udhiya) Program for Eid Al-Adha\n\nThe Qurbani Program for Eid Al-Adha aims to revive the ritual of sacrifice and promote the values of social solidarity by slaughtering sacrificial animals and distributing the meat to poor and needy families. This program helps bring joy to their homes and enables them to celebrate Eid with dignity.\n\nKhittat Al Ihsan Charitable Organization implements this program in full compliance with Islamic (Sharia) and health regulations, with complete transparency, ensuring that the meat reaches its rightful beneficiaries on time.`,
       programObjectives: {
         title: 'Program Objectives',
         items: [
@@ -1111,10 +1111,10 @@ export default async function ProjectDetailPage({
           'Documenting the process and preparing reports to ensure transparency.'
         ]
       },
-      callToAction: `Offer your Qurbani through Khitat Al-Ihsan. Your sacrifice reaches poor and needy families in full compliance with Sharia and health standards.`
+      callToAction: `Offer your Qurbani through Khittat Al Ihsan Charitable Organization. Your sacrifice reaches poor and needy families in full compliance with Sharia and health standards.`
     },
     ar: {
-      intro: `برنامج الأضحية (العيد)\n\nيهدف برنامج الأضحية لعيد الأضحى إلى إحياء سنة الذبح وتعزيز قيم التضامن الاجتماعي بذبح الأضاحي وتوزيع اللحم على الأسر الفقيرة والمحتاجة. يساعد هذا البرنامج في إدخال الفرح إلى بيوتهم وتمكينهم من الاحتفال بالعيد بكرامة.\n\nتنفذ جمعية خطط الإحسان هذا البرنامج وفقاً كاملاً للضوابط الإسلامية (الشرعية) والصحية، وبشفافية تامة، ضماناً لوصول اللحم إلى مستحقيه في الوقت المحدد.`,
+      intro: `برنامج الأضحية (العيد)\n\nيهدف برنامج الأضحية لعيد الأضحى إلى إحياء سنة الذبح وتعزيز قيم التضامن الاجتماعي بذبح الأضاحي وتوزيع اللحم على الأسر الفقيرة والمحتاجة. يساعد هذا البرنامج في إدخال الفرح إلى بيوتهم وتمكينهم من الاحتفال بالعيد بكرامة.\n\nتنفذ جمعية خطط الإحسان الخيرية هذا البرنامج وفقاً كاملاً للضوابط الإسلامية (الشرعية) والصحية، وبشفافية تامة، ضماناً لوصول اللحم إلى مستحقيه في الوقت المحدد.`,
       programObjectives: {
         title: 'أهداف البرنامج',
         items: [
@@ -1139,7 +1139,7 @@ export default async function ProjectDetailPage({
           'توثيق العملية وإعداد التقارير لضمان الشفافية.'
         ]
       },
-      callToAction: `قدّم أضحيتك عبر جمعية خطط الإحسان. تصل أضحيتك إلى الأسر الفقيرة والمحتاجة وفقاً كاملاً للضوابط الشرعية والصحية.`
+      callToAction: `قدّم أضحيتك عبر جمعية خطط الإحسان الخيرية. تصل أضحيتك إلى الأسر الفقيرة والمحتاجة وفقاً كاملاً للضوابط الشرعية والصحية.`
     }
   }
 

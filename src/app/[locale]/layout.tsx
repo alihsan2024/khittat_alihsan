@@ -39,23 +39,22 @@ const avenir = localFont({
 })
 export const metadata: Metadata = {
   title: {
-    template: '%s | Khitat Al-Ihsan Charity',
-    default: 'Khitat Al-Ihsan Charity Social Association'
+    template: '%s | Khittat Al Ihsan Charitable Organization',
+    default: 'Khittat Al Ihsan Charitable Organization'
   },
   description:
     'Founded in 2018 in Tripoli, Lebanon. A charity serving with dignity, compassion, and integrity. Standing with those in need.',
   keywords: [
     'charity',
     'humanitarian aid',
-    'NGO',
     'Tripoli Lebanon',
     'Al-Ihsan',
     'relief work',
     'social assistance'
   ],
-  authors: [{ name: 'Khitat Al-Ihsan Charity Social Association' }],
-  creator: 'Khitat Al-Ihsan Charity Social Association',
-  publisher: 'Khitat Al-Ihsan Charity Social Association',
+  authors: [{ name: 'Khittat Al Ihsan Charitable Organization' }],
+  creator: 'Khittat Al Ihsan Charitable Organization',
+  publisher: 'Khittat Al Ihsan Charitable Organization',
   metadataBase: new URL('https://khittatalihsan.com'),
   alternates: {
     canonical: '/',
@@ -65,17 +64,17 @@ export const metadata: Metadata = {
     }
   },
   openGraph: {
-    title: 'Khitat Al-Ihsan Charity Social Association',
+    title: 'Khittat Al Ihsan Charitable Organization',
     description:
       'Founded in 2018 in Tripoli, Lebanon. A charity serving with dignity, compassion, and integrity.',
     url: 'https://khittatalihsan.com',
-    siteName: 'Khitat Al-Ihsan Charity',
+    siteName: 'Khittat Al Ihsan Charitable Organization',
     locale: 'en_US',
     type: 'website'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Khitat Al-Ihsan Charity Social Association',
+    title: 'Khittat Al Ihsan Charitable Organization',
     description:
       'Founded in 2018 in Tripoli, Lebanon. A charity serving with dignity, compassion, and integrity.',
     creator: '@khittatalihsan'

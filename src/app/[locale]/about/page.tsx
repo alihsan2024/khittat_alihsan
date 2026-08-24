@@ -13,7 +13,7 @@ export async function generateMetadata({
   const title =
     locale === 'ar'
       ? `${t('About')} | جمعية خطط الإحسان الخيرية`
-      : `${t('About')} | Khitat Al-Ihsan Charity`
+      : `${t('About')} | Khittat Al Ihsan Charitable Organization`
 
   return {
     title,
@@ -42,7 +42,7 @@ export default async function AboutPage() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src='https://alihsan.s3.ap-southeast-2.amazonaws.com/images/PolicyPage/8E5A5569+Large.jpeg'
-            alt='About Khitat Al-Ihsan'
+            alt='About Khittat Al Ihsan Charitable Organization'
             className='h-full w-full object-cover'
           />
           <div className='absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/60' />

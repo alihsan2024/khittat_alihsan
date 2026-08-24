@@ -107,7 +107,7 @@ export async function generateMetadata({
   const title =
     locale === 'ar'
       ? `${c.title} | جمعية خطط الإحسان الخيرية`
-      : `${c.title} | Khitat Al-Ihsan Charity`
+      : `${c.title} | Khittat Al Ihsan Charitable Organization`
   return {
     title,
     description: c.intro[0],

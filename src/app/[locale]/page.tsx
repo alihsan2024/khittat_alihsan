@@ -21,7 +21,7 @@ export async function generateMetadata({
   const title =
     locale === 'ar'
       ? 'الرئيسية | جمعية خطط الإحسان الخيرية'
-      : 'Home | Khitat Al-Ihsan Charity'
+      : 'Home | Khittat Al Ihsan Charitable Organization'
   const description = t('Subheading')
 
   return {
@@ -41,7 +41,7 @@ export async function generateMetadata({
           url: 'https://alihsan.s3.ap-southeast-2.amazonaws.com/projects/1708467504622-alihsan-coverImage.png',
           width: 1200,
           height: 630,
-          alt: 'Khitat Al-Ihsan Charity'
+          alt: 'Khittat Al Ihsan Charitable Organization'
         }
       ]
     }
@@ -343,7 +343,7 @@ export default async function HomePage() {
                   {t('Office_Address')}
                 </p>
                 <p className='text-sm text-gray-700 dark:text-gray-300'>
-                  Tripoli, Meetien Street, Al-Mohntazah Building, Shop Number 2
+                  Tripoli, Meetien Street, Al-Mohntazah Building, Ground Floor
                 </p>
               </div>
               <div className='rounded-xl border border-gray-200 bg-white p-5 ring-1 ring-black/5 dark:border-gray-800 dark:bg-gray-900 dark:ring-white/10'>
@@ -356,12 +356,12 @@ export default async function HomePage() {
                 </a>
               </div>
               <div className='rounded-xl border border-gray-200 bg-white p-5 ring-1 ring-black/5 dark:border-gray-800 dark:bg-gray-900 dark:ring-white/10'>
-                <p className='font-semibold text-primary-300'>Phone</p>
+                <p className='font-semibold text-primary-300'>{t('Phone')}</p>
                 <a
-                  href='tel:+9613976426'
+                  href='tel:+9616210607'
                   className='text-sm text-gray-700 hover:text-primary-300 dark:text-gray-300 dark:hover:text-primary-400'
                 >
-                  +961 3 976 426
+                  {t('Phone_Value')}
                 </a>
               </div>
               <div className='rounded-xl border border-gray-200 bg-white p-5 ring-1 ring-black/5 dark:border-gray-800 dark:bg-gray-900 dark:ring-white/10'>

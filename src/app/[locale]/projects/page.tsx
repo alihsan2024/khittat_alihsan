@@ -15,7 +15,7 @@ export async function generateMetadata({
   const title =
     locale === 'ar'
       ? `${t('Projects_Title')} | جمعية خطط الإحسان الخيرية`
-      : `${t('Projects_Title')} | Khitat Al-Ihsan Charity`
+      : `${t('Projects_Title')} | Khittat Al Ihsan Charitable Organization`
 
   return {
     title,

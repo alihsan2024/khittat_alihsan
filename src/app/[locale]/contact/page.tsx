@@ -14,7 +14,7 @@ export async function generateMetadata({
   const title =
     locale === 'ar'
       ? `${t('Contact_Title')} | جمعية خطط الإحسان الخيرية`
-      : `${t('Contact_Title')} | Khitat Al-Ihsan Charity`
+      : `${t('Contact_Title')} | Khittat Al Ihsan Charitable Organization`
 
   return {
     title,
@@ -55,7 +55,7 @@ export default async function ContactPage() {
               </h3>
             </div>
             <p className='text-gray-700 dark:text-gray-300'>
-              Tripoli, Meetien Street, Al-Mohntazah Building, Shop Number 2
+              Tripoli, Meetien Street, Al-Mohntazah Building, Ground Floor
             </p>
           </div>
 
@@ -85,6 +85,22 @@ export default async function ContactPage() {
               className='text-gray-700 transition-colors hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400'
             >
               info@khittatalihsan.org.lb
+            </a>
+          </div>
+
+          {/* Phone */}
+          <div className='rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900'>
+            <div className='mb-4 flex items-center gap-3'>
+              <FiPhone className='h-6 w-6 text-primary-500' />
+              <h3 className='text-lg font-bold text-primary-500'>
+                {t('Phone')}
+              </h3>
+            </div>
+            <a
+              href='tel:+9616210607'
+              className='text-gray-700 transition-colors hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400'
+            >
+              {t('Phone_Value')}
             </a>
           </div>
 
