@@ -18,7 +18,7 @@
   "About_Description": "Founded in 2018 in Tripoli, Lebanon, Khittat Al Ihsan Charitable Organization's mission is to stand with those facing hardship and to serve with dignity, compassion, and integrity. For us, humanitarian aid is more than a charitable act, it is a responsibility born from our shared humanity.",
   "Vision": "Our Vision",
   "Vision_Description": "We work to build a community where everyone has access to food, education, and basic healthcare, without discrimination. From Tripoli, Lebanon, we support those most in need and promote human dignity and sustainable development all over the country.",
-  "Mission": "Our Mission",
+  "Mission": "Mission",
   "Mission_Description": "We strive to alleviate human suffering and uphold human dignity by delivering essential humanitarian assistance and sustainable solutions to the most vulnerable populations affected by crises, through transparent partnerships and effective programs that strengthen resilience and create lasting positive impact.",
   "Who_We_Are": "Who We Are",
   "Who_We_Are_Description": "Khittat Al Ihsan Charitable Organization was born from Al-Ihsan Mother Association and launched with sincere support from Lebanese expatriates in Australia, who united under one cause believing that solidarity makes a difference. As the crises in Lebanon worsened, with rising living costs and the absence of the state, expatriates responded with responsibility and compassion.\n\nKhittat Al Ihsan Charitable Organization was founded in 2018 in Tripoli, Lebanon, carrying a humanitarian mission to stand with those most in need and to serve them with dignity, compassion, and integrity. Independent of any political affiliation, we believe that humanitarian work is not just charity, but a responsibility rooted in our shared humanity.\n\nFrom this reality, Khittat Al Ihsan Charitable Organization emerged as a humanitarian response aimed at securing basic living needs, from supporting education and healthcare to standing beside orphans and underprivileged families, to be a hand of giving and hope in times of hardship.",
@@ -42,7 +42,6 @@
   "No_Updates": "No updates available at the moment.",
   "Since_2018": "Since 2018",
   "Community": "Community",
-  "Mission": "Mission",
   "Humanitarian": "Humanitarian",
   "Menu": "Menu",
   "Language": "Language",
@@ -70,5 +69,9 @@
   "Bank_Details_Date_Value": "Tripoli on 30/01/2026",
   "Orphan_Sponsorship_Title": "Orphan Child Sponsorship",
   "Orphan_Sponsorship_Description": "We keep the orphaned child within their family and care for them in their natural environment. Financial sponsorship helps the mother keep her child under her care. Learn more about how you can sponsor an orphan.",
-  "Orphan_Sponsorship_CTA": "Learn More"
+  "Orphan_Sponsorship_CTA": "Learn More",
+  "Maintenance_Badge": "We'll be back soon",
+  "Maintenance_Title": "We're improving your experience",
+  "Maintenance_Message": "Our site is currently undergoing improvements to improve your experience. Please check back shortly — thank you for your patience and continued support.",
+  "Maintenance_Contact_Title": "Need to reach us in the meantime?"
 }

@@ -20,6 +20,26 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Maintenance mode
+
+The whole public site can be put behind a branded "we're improving your experience"
+screen ([src/app/[locale]/maintenance/page.tsx](<src/app/[locale]/maintenance/page.tsx>)),
+served in English or Arabic depending on the visitor.
+
+| Variable | Purpose |
+| --- | --- |
+| `MAINTENANCE_MODE` | `true` gates the site, anything else serves it normally |
+| `MAINTENANCE_BYPASS_TOKEN` | Secret that lets you keep browsing the real site |
+
+- The gate lives in [src/middleware.ts](src/middleware.ts) and runs before the
+  next-intl middleware. Gated responses are `no-store` and `noindex, nofollow`.
+- The admin area (`/admin`) stays reachable — it is already behind its own login.
+- To see the real site while the gate is on, open `/?preview=<MAINTENANCE_BYPASS_TOKEN>`
+  once. That sets an httpOnly cookie which lasts 7 days; clear the
+  `khittat_maintenance_bypass` cookie to see the maintenance screen again.
+- Keep the token out of the tracked `.env` — put it in `.env.local` locally and
+  in the host's environment variables in production.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

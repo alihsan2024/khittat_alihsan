@@ -5,8 +5,10 @@ import { Toaster } from '@/components/ui/toaster'
 import type { Metadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
+import { headers } from 'next/headers'
 import localFont from 'next/font/local'
 import NextTopLoader from 'nextjs-toploader'
+import { MAINTENANCE_HEADER } from '@/src/maintenance'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import './globals.css'
@@ -98,6 +100,9 @@ export default async function RootLayout({
 }) {
   const { locale } = await params
   const messages = await getMessages()
+  // Set by the middleware when the maintenance gate is on: the page is served
+  // on its own, without the site chrome.
+  const isMaintenance = (await headers()).get(MAINTENANCE_HEADER) === '1'
   return (
     <html
       lang={locale}
@@ -126,11 +131,15 @@ export default async function RootLayout({
                   color='var(--primary)'
                   showSpinner={false}
                 />
-                <Header locale={locale} />
-                <main className='mx-auto max-w-screen-2xl flex-1'>
+                {!isMaintenance && <Header locale={locale} />}
+                <main
+                  className={
+                    isMaintenance ? 'flex-1' : 'mx-auto max-w-screen-2xl flex-1'
+                  }
+                >
                   {children}
                 </main>
-                <Footer />
+                {!isMaintenance && <Footer />}
                 <Toaster />
               </NextIntlClientProvider>
             </ThemeProvider>
